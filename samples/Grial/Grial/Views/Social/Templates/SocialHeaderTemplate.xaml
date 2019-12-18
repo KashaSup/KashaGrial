@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" 
+	x:Class="UXDivers.Artina.Grial.SocialHeaderStyleTemplate">
+	<Label
+		Style="{StaticResource SocialHeaderStyle}" 
+	>
+		<Label.FormattedText>
+			<FormattedString>
+				<FormattedString.Spans>
+					<Span 
+						x:Name="HeaderIcon" 
+						Text="&#xf1ae; " 
+						FontSize="{StaticResource BaseFontSize}" 
+						ForegroundColor="#FF1C1C1C" 
+						FontFamily="{x:Static artina:FontAwesome.FontName}"/>
+					<Span 
+						x:Name="HeaderLabel" 
+						Text="FRIENDS" 
+						FontSize="{StaticResource BaseFontSize}" 
+						ForegroundColor="#FF1C1C1C" />
+				</FormattedString.Spans>
+			</FormattedString>
+		</Label.FormattedText>
+	</Label>
+
+</ContentView>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CarouselPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.WalkthroughPage"
+	xmlns:uikit="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial">
+
+	<uikit:WalkthroughStepItemTemplate 
+		BackgroundColor="{ StaticResource ComplementColor }"
+		StepBackgroundImage="{ StaticResource WalkthroughStepBackgroundImage0 }"  
+		Text="A flexible UI Kit for Xamarin Forms."
+		IconColor="{ DynamicResource WalkthroughStepItemTemplateIconColor1 }"
+		ButtonText="Next &gt;"
+		/>
+
+	<uikit:WalkthroughStepItemTemplate 
+		BackgroundColor="{ StaticResource ComplementColorDark }"
+		StepBackgroundImage="{ StaticResource WalkthroughStepBackgroundImage1 }" 
+		Text="Take what you need, build what you want."
+		IconColor="#88FF0000" 
+		ButtonText="Next &gt;"
+		/>
+
+	<uikit:WalkthroughStepItemTemplate 
+		BackgroundColor="{ StaticResource ComplementColorDarker }"
+		StepBackgroundImage="{ StaticResource WalkthroughStepBackgroundImage2 }" 
+		Text="Beautiful designed screens for your app"  
+		ButtonText="Finish!" 
+		/>
+
+</CarouselPage>

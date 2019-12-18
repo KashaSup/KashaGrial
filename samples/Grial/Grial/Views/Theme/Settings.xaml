@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.Settings" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	BackgroundColor="White"
+	Title="Settings">
+
+	<ContentPage.Content>
+		<ScrollView > 
+
+			<StackLayout Padding="20" VerticalOptions="FillAndExpand">
+				
+
+<!--				 <TableView Intent="Form">
+			        <TableView.Root>
+			            <TableSection Title="Form">   
+			            	<ImageCell 
+			            		ImageSource="avatar.png"
+			            		Text="This is text"
+			            		Detail="detail" />
+
+			            	<ViewCell>
+			            		<Slider />
+			            	</ViewCell>
+			            </TableSection>
+			        </TableView.Root>
+			    </TableView>-->
+
+                <TableView Intent="Settings">
+			        <TableView.Root>
+			            <TableSection Title="PERSONAL INFO">   
+			                <EntryCell Text="steve@uxdivers.com" Placeholder="Email"  />
+			                <EntryCell Placeholder="Phone number"  />
+			            </TableSection>
+			        
+			            <TableSection Title="CONNECT YOUR ACCOUNT">   
+			                <SwitchCell On="true" Text="Facebook" />
+			                <SwitchCell Text="Twitter" />
+			                <SwitchCell Text="Google" />
+			            </TableSection>
+			        </TableView.Root>
+			    </TableView>
+
+				<Button 
+					Style="{DynamicResource SaveButtonStyle}" 
+					Text="Save Changes" />
+
+				<Button 
+					Style="{DynamicResource DeleteButtonStyle}" 
+					Text="Delete Account" 
+					 />
+
+			</StackLayout>
+		</ScrollView> 
+	</ContentPage.Content>
+</ContentPage>

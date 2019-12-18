@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="grial-uikit">
+  <name>Grial UIKit</name>
+  <publisher>UXDivers</publisher>
+  <publisher-url>http://www.grialkit.com</publisher-url>
+  <version>1.5.2</version>
+  <summary>Build superb Xamarin Forms apps in a fraction of time with ready made UI views crafted in XAML.</summary>
+  <screenshots>
+    <img src="screenshots/screenshot1.jpg" title="screenshot1" />
+    <img src="screenshots/screenshot2.jpg" title="screenshot2" />
+    <img src="screenshots/screenshot3.jpg" title="screenshot3" />
+    <img src="screenshots/screenshot4.jpg" title="screenshot4" />
+  </screenshots>
+  <samples>
+    <sample id="Grial">
+      <name>Grial UIKit</name>
+      <summary>Grial UIKit</summary>
+    </sample>
+  </samples>
+</component>

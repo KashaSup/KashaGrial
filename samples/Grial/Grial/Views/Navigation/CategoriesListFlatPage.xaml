@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="UXDivers.Artina.Grial.CategoriesListFlatPage"
+	Title="Browse Grial UIkit"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:templates="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial">
+
+	<StackLayout>
+
+		<ListView 
+			ItemsSource="{Binding SamplesCategories}"
+			SeparatorVisibility="None"
+			SeparatorColor="Transparent"
+			ItemTapped="OnItemTapped"
+			HasUnevenRows="false"
+			RowHeight="80">
+
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<templates:CategoriesListItemTemplate/>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+
+		</ListView>
+
+	</StackLayout>
+
+</ContentPage>

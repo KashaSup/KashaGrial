@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	Title="Profile"
+	x:Class="UXDivers.Artina.Grial.ProfilePage"
+	x:Name="page"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared">
+
+	<AbsoluteLayout Padding="0">
+		<!-- MAIN IMAGE -->
+		<Image
+			x:Name="img"
+			Aspect="AspectFill"
+			Source="profile_preview.jpg"
+			AnchorY="0"
+			TranslationY="-10"
+			Scale="1.2"
+			AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+			AbsoluteLayout.LayoutFlags="All"/>
+	
+		<Grid RowSpacing="0"
+			AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+		 	AbsoluteLayout.LayoutFlags="All">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="40*" />
+			</Grid.RowDefinitions>
+	
+			<!-- TOP ROW -->
+			<StackLayout
+				Spacing="0"
+				Padding="10"
+				VerticalOptions="FillAndExpand"
+				Orientation="Vertical"
+				Grid.Row="0">
+	
+			</StackLayout>
+	
+	
+			<!-- BOTTOM ROW -->
+			<StackLayout
+				Spacing="0"
+				Padding="0"
+				VerticalOptions="End"
+				Orientation="Vertical"
+				Grid.Row="1" 
+				AbsoluteLayout.LayoutBounds="0, 1, 1, 1">
+		
+				<StackLayout Padding="0" Spacing="0" >
+			
+					<StackLayout Padding="20,0,20,20">
+						<!-- HEADERS -->
+						<Label
+							Text="Robert Stainford"
+							FontAttributes="Bold"
+							LineBreakMode="WordWrap"
+							VerticalOptions="End"
+							TextColor="White"
+							FontSize="30"/>
+			
+						<Label
+							Text="Passion driven designer and developer. Frustrated musician and father of two."
+							LineBreakMode="WordWrap"
+							VerticalOptions="End"
+							TextColor="White"
+							FontAttributes="None"/>
+				
+						<BoxView Style="{StaticResource BrandNameOrnamentStyle}"/>
+			
+					</StackLayout>
+			
+			
+					<!-- TOOLBAR -->
+					<Grid 
+						Style="{StaticResource ToolbarStyle}" 
+						BackgroundColor="{StaticResource TranslucidBlack}">
+						
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="25*" />
+							<ColumnDefinition Width="25*" />
+							<ColumnDefinition Width="25*" />
+							<ColumnDefinition Width="25*" />
+						</Grid.ColumnDefinitions>
+			
+						<Label Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center">
+									<Label.FormattedText>
+										<FormattedString>
+											<FormattedString.Spans>
+												<Span Text="&#xf08a; " ForegroundColor="{StaticResource AccentColor}" FontFamily="{x:Static artina:FontAwesome.FontName}" />
+												<Span Text="2963" ForegroundColor="White" />
+											</FormattedString.Spans>
+										</FormattedString>
+									</Label.FormattedText>
+								</Label>
+								<Label Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center">
+									<Label.FormattedText>
+										<FormattedString>
+											<FormattedString.Spans>
+												<Span Text="&#xf075; " ForegroundColor="{StaticResource AccentColor}" FontFamily="{x:Static artina:FontAwesome.FontName}" />
+												<Span Text="2963" ForegroundColor="White" />
+											</FormattedString.Spans>
+										</FormattedString>
+									</Label.FormattedText>
+								</Label>
+								<Label Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center">
+									<Label.FormattedText>
+										<FormattedString>
+											<FormattedString.Spans>
+												<Span Text="&#xf183;  " ForegroundColor="{StaticResource AccentColor}" FontFamily="{x:Static artina:FontAwesome.FontName}" />
+												<Span Text="2963" ForegroundColor="White" />
+											</FormattedString.Spans>
+										</FormattedString>
+									</Label.FormattedText>
+								</Label>
+								<Label Grid.Column="3" VerticalTextAlignment="Center" HorizontalTextAlignment="Center">
+									<Label.FormattedText>
+										<FormattedString>
+											<FormattedString.Spans>
+												<Span Text="&#xf006; " ForegroundColor="{StaticResource AccentColor}" FontFamily="{x:Static artina:FontAwesome.FontName}" />
+												<Span Text="2963" ForegroundColor="White" />
+											</FormattedString.Spans>
+										</FormattedString>
+									</Label.FormattedText>
+						</Label>
+					</Grid>
+
+				</StackLayout>
+
+			</StackLayout>
+		</Grid>
+
+	</AbsoluteLayout>
+</ContentPage>

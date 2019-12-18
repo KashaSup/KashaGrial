@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.CustomRenderersPage"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	Title="Custom Renderers">
+
+
+	<ScrollView>
+		<StackLayout VerticalOptions="Fill" Padding="20" Spacing="10">
+			<!-- ARTINA BUTTON -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf10c; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Artina Buttons" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+
+			<artina:Button Text="Default" />
+			<artina:Button Text="Primary Action" Style="{DynamicResource PrimaryActionButtonStyle}" />
+			<artina:Button Text="Secondary Action" Style="{DynamicResource SecondaryActionButtonStyle}" />
+			<artina:Button Text="Save" Style="{DynamicResource SaveButtonStyle}" />
+			<artina:Button Text="Delete" Style="{DynamicResource DeleteButtonStyle}" />
+
+			<AbsoluteLayout Style="{ DynamicResource ThemeShowCaseSeparatorStyle }" >
+				<BoxView Style="{ DynamicResource ThemeShowCaseHorizontalRuleStyle }" />
+			</AbsoluteLayout>
+
+			
+			<!-- CIRCLE IMAGES -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf004; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="CircleImages" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+				<artina:CircleImage 
+					Source="{ StaticResource ThemeAvatarSample0Image }"
+					Style="{ StaticResource AvatarXSmall }"
+				/>
+				<artina:CircleImage 
+					Source="{ StaticResource ThemeAvatarSample0Image }"
+					Style="{ StaticResource AvatarSmall }"
+				/>
+
+				<artina:CircleImage 
+					Source="{ StaticResource ThemeAvatarSample1Image }"
+					Style="{ StaticResource Avatar }" 
+				/>
+
+				<artina:CircleImage 
+					Source="{ StaticResource ThemeAvatarSample1Image }"
+					Style="{ StaticResource AvatarLarge }" 
+				/>
+			</StackLayout>
+
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+			<!-- ARTINA ENTRY -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf004; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Artina Entry" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<Entry
+				Placeholder="E-mail"
+				Text=""
+				TextColor="Black"
+				Style="{ StaticResource ArtinaEntryStyle }"
+			/>
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+			<!-- FONTAWESOME ICONS -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf004; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Fontawesome Icons" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="&#xf001;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf002;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf003;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf004;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf005;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf006;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf007;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf008;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf009;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf010;" Style="{ DynamicResource FontIconItemDemo }" />
+			</StackLayout>
+
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+			<!-- FONTAWESOME ICONS -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf004; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Validation Entry Error Style" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<StackLayout Orientation="Vertical">
+				<Entry Text="Something wrong here" />
+
+			  <!---USERNAME VALIDATION INDICATOR-->
+				<Label
+					HorizontalOptions="Start"
+					Text=" Please enter required information "
+					Style="{DynamicResource ValidationEntryErrorStyle}"
+					/>
+
+			</StackLayout>
+			<StackLayout>
+				<Entry Text="Something wrong here" />
+			
+				<!---USERNAME VALIDATION INDICATOR-->
+				<Label
+					HorizontalOptions="Start"
+					Text=" Oops! This is just a friendly warning "
+					Style="{DynamicResource ValidationEntryWarningStyle}"
+					/>
+			</StackLayout>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

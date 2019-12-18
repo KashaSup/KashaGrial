@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 Title="Login"
+			 x:Class="UXDivers.Artina.Grial.Login"
+			 BackgroundColor="White"
+			 BackgroundImage="signup_background.png"
+			 xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+			 xmlns:views="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial" >
+
+<ScrollView Padding="20">
+
+    <Grid 
+    	ColumnSpacing="0" 
+    	RowSpacing="0" 
+    	HorizontalOptions="FillAndExpand" >
+
+      <Grid.RowDefinitions>
+        <RowDefinition Height=".4*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height=".4*" />
+      </Grid.RowDefinitions>
+
+	  <!-- LOGO -->
+      <views:BrandBlock Grid.Row="0" /> 
+       
+      <!-- CLOSE ICON -->
+      <StackLayout 
+      	Spacing="0" 
+      	Grid.Row="0"
+        AbsoluteLayout.LayoutBounds="0, 1, 1, 1"
+        AbsoluteLayout.LayoutFlags="All" 
+        Padding="10"
+        HorizontalOptions="End"
+        VerticalOptions="Start">
+
+        <Label Style="{DynamicResource IconCloseLabelStyle}" >
+          <Label.GestureRecognizers>
+            <TapGestureRecognizer Tapped="OnCloseButtonClicked" />
+          </Label.GestureRecognizers>
+        </Label>
+
+      </StackLayout>
+
+
+      <!---FIELDS CONTAINER-->
+      <StackLayout 
+      	Grid.Row="1" 
+      	Padding="20" 
+      	Spacing="30"
+      	VerticalOptions="FillAndExpand" 
+      	HorizontalOptions="Fill">
+
+
+        <!---EMAIL FIELD-->
+        <Entry
+           x:Name="emailEntry"
+           Placeholder="E-mail"
+           Style="{DynamicResource ArtinaLoginEntryStyle}" />
+
+
+        <!---USERNAME FIELD-->
+        <Entry x:Name="usernameEntry"
+            Placeholder="Username"
+            Style="{DynamicResource ArtinaLoginEntryStyle}" />
+
+
+        <!---PASSWORD FIELD-->
+		<Entry x:Name="passwordEntry"
+			Placeholder="Password"
+			IsPassword="true"
+			Style="{DynamicResource ArtinaLoginEntryStyle}" />
+
+        <!---PASSWORD REPEAT FIELD-->
+          <Entry x:Name="passwordRepeatEntry"
+            Placeholder="Repeat Password"
+            Style="{DynamicResource ArtinaLoginEntryStyle}" />
+        
+      </StackLayout>
+
+
+      <StackLayout VerticalOptions="Center"
+        Grid.Row="2">
+
+        <Button
+          Style="{DynamicResource MainButtonStyle}"
+          Text="Sign Up!">
+        </Button>
+
+        <Button 
+        	Style="{DynamicResource TransparentButtonStyle}" 
+        	Text="Already a user? Login now" />
+
+        <StackLayout 
+       		x:Name="loginStack" 
+       		HorizontalOptions="End" 
+          	Spacing="0" 
+          	Padding="0">
+
+        </StackLayout>
+        
+      </StackLayout>
+         
+    </Grid>
+
+  </ScrollView>
+
+</ContentPage>

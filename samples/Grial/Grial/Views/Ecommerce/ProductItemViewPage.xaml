@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.ProductItemViewPage"
+	xmlns:sample="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" 
+	Title="{Binding Name}">
+
+
+	 <!--MAIN CONTEINER GRID-->
+	<Grid VerticalOptions="Fill">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="60*" />
+			<RowDefinition Height="40*" />
+			<RowDefinition Height="60" />
+		</Grid.RowDefinitions>
+
+		<!--PRODUCT IMAGE-->
+		<Image 
+			Grid.Row="0"
+			Source="{Binding Image}" 
+			Aspect="AspectFill" >
+			<Image.GestureRecognizers>
+				<TapGestureRecognizer Tapped="OnImageTapped" />
+			</Image.GestureRecognizers>
+		</Image>
+
+			<!-- PRODUCT INFO -->
+			<StackLayout Grid.Row="1">
+
+				<!---TOOLBAR -->
+				<StackLayout
+					BackgroundColor="#f9f9f9" 
+					TranslationY="-6">
+
+					<Grid 
+						HeightRequest="30"
+						Padding="20,6,20,10" 
+						RowSpacing="0" 
+						ColumnSpacing="0">
+
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="50*"/>
+							<ColumnDefinition Width="50*"/>
+						</Grid.ColumnDefinitions>
+
+						<Grid.RowDefinitions>
+							<RowDefinition Height="40"/>
+						</Grid.RowDefinitions> 
+
+						<StackLayout 
+							Orientation="Horizontal" 
+							HorizontalOptions="Start" 
+							VerticalOptions="Center">
+
+							<Label 
+								Text="Price" 
+								FontSize ="16"
+								TextColor ="{StaticResource AccentColor}"
+								FontAttributes="Bold"
+							/>
+
+							<Label
+								Grid.Column="0"
+								Text="{Binding Price}"
+								FontSize ="16"
+								FontAttributes="Bold"
+								TextColor ="{StaticResource AccentColor}"
+								/>
+						</StackLayout>
+
+						<Label VerticalOptions="Center" FontSize="14" HorizontalOptions="End" Grid.Column="1" Grid.Row="0">
+							<Label.FormattedText> 
+								<FormattedString>
+								<FormattedString.Spans>
+									<Span Text="&#xf004; " ForegroundColor="{StaticResource AccentColor}" FontFamily="{x:Static artina:FontAwesome.FontName}" />
+								</FormattedString.Spans>
+								</FormattedString>
+							</Label.FormattedText>
+						</Label>
+
+					</Grid>
+
+					<BoxView Style="{StaticResource Horizontal1ptLineStyle}" VerticalOptions="End"/>
+
+				</StackLayout>
+
+				<!---DESCRIPTION -->
+				
+				<StackLayout Padding="20,0,20,0" >
+					
+					<Label 
+						 Text="{Binding Name}"
+						 FontSize ="20"
+						 FontAttributes="Bold"
+						HorizontalOptions="Fill"
+						TextColor="{StaticResource ComplementColor}"
+						/>
+
+					<ScrollView>
+						<Label 
+							Text="{Binding Description}" 
+							HorizontalOptions="Fill"
+							/>
+					</ScrollView>
+
+					<Label 
+						Text="{Binding Manufacturer, StringFormat='BY {0:F0}'}}"
+						FontSize ="12"
+						HorizontalOptions="Fill"
+						TextColor="#37474f"
+						/>
+
+				</StackLayout>
+
+			</StackLayout>
+
+			<!---BUY BUTTON -->
+			<Grid Padding="20,10,20,10" Grid.Row="2">
+				<artina:Button 
+					Style="{DynamicResource PrimaryActionButtonStyle}" 
+					Text="Add to cart" 
+					/>
+			</Grid>
+		</Grid>	
+
+</ContentPage>

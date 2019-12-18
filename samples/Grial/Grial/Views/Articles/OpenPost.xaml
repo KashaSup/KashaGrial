@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="UXDivers.Artina.Grial.OpenPost"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:sample="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	xmlns:templates="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	Title="Article">
+
+  <ScrollView x:Name="outerScrollView" BackgroundColor="White">
+
+    <Grid x:Name="layeringGrid" RowSpacing="0">
+      <Grid Padding="0">
+        <!-- MAIN IMAGE -->
+        <Image
+			x:Name="img"
+			Source="{Binding BackgroundImage}"
+			AnchorY="0"
+			TranslationY="0"
+			Scale="1"
+			Aspect="AspectFill"
+			HorizontalOptions="CenterAndExpand"
+			VerticalOptions="StartAndExpand"
+
+		 />
+      </Grid>
+
+      <StackLayout Spacing="0" Padding="0">
+        <StackLayout Padding="0, 0, 0, 200" TranslationY="200" Spacing="0">
+
+          <StackLayout Padding="20" x:Name="headers" AnchorX="0">
+            <!-- HEADERS -->
+
+             <Label
+				Text="{Binding Title}"
+				LineBreakMode="WordWrap"
+				VerticalOptions="End"
+				TextColor="White"
+				FontSize="35"
+				FontAttributes="None"/>
+
+            <StackLayout Orientation="Horizontal">
+            	<artina:CircleImage x:Name="avatar" 
+	            	Source="{Binding Avatar}" 
+	            	WidthRequest="30" 
+	            	HeightRequest="30" 
+	            	HorizontalOptions="Start" 
+           		/>
+	            <Label
+					Text="{Binding Author, StringFormat='BY {0:F0}'}}"
+					VerticalOptions="Center"
+					TextColor="{StaticResource BrandColorLight}" 
+					HorizontalOptions="End" />
+            </StackLayout>
+
+           
+
+          </StackLayout>
+
+
+          <!-- TOOLBAR -->
+<!--          <Image Source="white_fader_top.png" Aspect="Fill" />-->
+
+          <StackLayout Orientation="Horizontal" Padding="20" BackgroundColor="White">
+            <Label 
+            	Text="{Binding Section}" 
+            	TextColor="#252525" 
+            	HorizontalOptions="StartAndExpand" />
+            <Label 
+            	Text="{Binding When}" 
+            	TextColor="#8c8c8c" 
+            	HorizontalOptions="StartAndExpand" />
+            <Label HorizontalOptions="StartAndExpand">
+              <Label.FormattedText>
+                <FormattedString>
+                  <FormattedString.Spans>
+                    <Span 
+                    	Text="&#xf0c0; " 
+                    	FontSize="{StaticResource BaseFontSize}"
+                    	ForegroundColor="{StaticResource AccentColor}" 
+                    	FontFamily="{x:Static artina:FontAwesome.FontName}" />
+                    <Span 
+                    	Text="77" 
+                    	FontSize="{StaticResource BaseFontSize}"
+                    	ForegroundColor="{StaticResource AccentColor}" />
+                  </FormattedString.Spans>
+                </FormattedString>
+              </Label.FormattedText>
+            </Label>
+            <Label HorizontalOptions="StartAndExpand">
+              <Label.FormattedText>
+                <FormattedString>
+                  <FormattedString.Spans>
+                    <Span 
+                    	Text="&#xf004; " 
+                    	FontSize="{StaticResource BaseFontSize}"
+                    	ForegroundColor="{StaticResource AccentColor}" 
+                    	FontFamily="{x:Static artina:FontAwesome.FontName}" />
+                    <Span 
+                    	Text="22" 
+                    	FontSize="{StaticResource BaseFontSize}"
+                    	ForegroundColor="{StaticResource AccentColor}" />
+                  </FormattedString.Spans>
+                </FormattedString>
+              </Label.FormattedText>
+            </Label>
+          </StackLayout>
+
+          <BoxView Style="{StaticResource Horizontal1ptLineStyle}" />
+
+          <StackLayout Padding="20" BackgroundColor="White">
+            <!-- MAIN PARAGRAPH -->
+            <Label
+				Text="{Binding Body}"
+				VerticalOptions="EndAndExpand"
+				TextColor="#8a8a8a" />
+          </StackLayout>
+
+
+          <!-- QUOTE -->
+
+          <StackLayout
+			Orientation="Horizontal"
+			Padding="20"
+			Spacing="0" BackgroundColor="White">
+
+            <Label
+				Text="“"
+				FontSize="42"
+				MinimumWidthRequest="42"
+				FontAttributes="Bold"
+				VerticalOptions="Start"
+				TextColor="#141414" />
+
+            <StackLayout Padding="20">
+              <Label
+				Text="{Binding Quote}"
+				VerticalOptions="Start"
+				FontSize="20"
+				LineBreakMode="WordWrap"
+				TextColor="#141414" />
+
+              <Label Text="{Binding QuoteAuthor}" TextColor="#252525" />
+            </StackLayout>
+
+            <Label
+				Text="”"
+				FontSize="42"
+				FontAttributes="Bold"
+				MinimumWidthRequest="42"
+				VerticalOptions="End"
+				TextColor="#141414"/>
+          </StackLayout>
+
+          <StackLayout Padding="20" BackgroundColor="White">
+            <!-- REMAINING PARAGRAPHS -->
+            <Label
+				Text="{Binding Body}"
+				VerticalOptions="StartAndExpand"
+				TextColor="#8a8a8a" />
+          </StackLayout>
+
+          <!-- POSTED -->
+
+          <!-- POSTED BY -->
+          <StackLayout 
+          		Orientation="Horizontal" 
+          		Padding="20,60,20,20" 
+          		Spacing="20" 
+          		BackgroundColor="White">
+
+            <artina:CircleImage 
+            	Source="{Binding Avatar}" 
+            	WidthRequest="48" 
+            	HeightRequest="48" />
+            <StackLayout>
+              <Label 
+              	Text="POSTED BY" 
+              	TextColor="#252525" 
+              	VerticalOptions="EndAndExpand" />
+              <Label 
+              	Text="{Binding Author}" 
+              	TextColor="{StaticResource AccentColor}" 
+              	FontAttributes="Bold" 
+              	VerticalOptions="StartAndExpand" />
+            </StackLayout>
+
+            <!-- POSTED IN -->
+			<Label x:Name="icon"				   
+				   Text="&#xf02c;"
+				   TextColor="{StaticResource AccentColor}"
+				   FontSize="30" 
+				   Style="{StaticResource FontIcon}"
+				   XAlign="Center"
+				   YAlign="Center"
+			/>
+
+            <StackLayout BackgroundColor="White">
+              <Label 
+              	Text="POSTED IN" 
+              	TextColor="#252525" 
+              	VerticalOptions="EndAndExpand" />
+              <Label 
+              	Text="{Binding Section}" 
+              	TextColor="{StaticResource AccentColor}" 
+              	FontAttributes="Bold" 
+              	VerticalOptions="StartAndExpand" />
+            </StackLayout>
+          </StackLayout>
+
+
+        </StackLayout>
+
+        <!-- COMMENTS -->
+        <StackLayout 
+        	BackgroundColor="#f9f9f9" 
+        	Padding="20">
+          <Label 
+          	BindingContext="{x:Static sample:SampleData.Comments}"
+			Text="{Binding Count, StringFormat='{0:F0} COMMENTS'}"
+			TextColor="#252525"
+			HorizontalOptions="StartAndExpand"
+			VerticalOptions="Start"
+		/>
+          <!--					
+						<Button 
+						Text="SHOW ALL"
+						TextColor="#141414" 
+						FontSize="12" 
+						HorizontalOptions="End"
+						VerticalOptions="Start"
+						/>-->
+        </StackLayout>
+
+        <StackLayout>
+
+          <!-- COMMENTS -->
+          <ListView
+			ItemsSource="{x:Static sample:SampleData.Comments}"
+			x:Name="listViewMessages"
+			BackgroundColor="White"
+			SeparatorColor="#77CCCCCC"
+			SeparatorVisibility="Default"
+			HasUnevenRows="true"
+			ItemTapped="OnItemTapped"
+             >
+
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+
+                  <ViewCell.ContextActions>
+                    <MenuItem Clicked="OnMore"
+                       Text="More" />
+                    <MenuItem Clicked="OnDelete"
+                       Text="Delete" IsDestructive="True" />
+                  </ViewCell.ContextActions>
+
+                  <templates:CommentItemTemplate />
+
+                </ViewCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+        </StackLayout>
+
+        <!-- BUTTON -->
+        <StackLayout Padding="20">
+          <Button
+			Style="{DynamicResource MainButtonStyle}"
+			Text="Add Comment"
+			Clicked="OnPrimaryActionButtonClicked"
+			 />
+        </StackLayout>
+      </StackLayout>
+    </Grid>
+
+  </ScrollView>
+
+</ContentPage>

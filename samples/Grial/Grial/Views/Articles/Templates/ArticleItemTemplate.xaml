@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	x:Class="UXDivers.Artina.Grial.ArticleItemTemplate">
+
+	<Grid BackgroundColor="Black">
+			<Image
+				Source="{Binding BackgroundImage}"
+				Aspect="AspectFill"
+				Opacity=".7"/>
+			
+		<Grid
+			ColumnSpacing="0" 
+			RowSpacing="0" 
+			Padding="20">
+
+			<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="40" />
+			</Grid.RowDefinitions>
+
+			<StackLayout Grid.Row="0" VerticalOptions="End" HorizontalOptions="Start">
+				<Label
+					FontSize="30"
+					FontAttributes="Bold"
+					Text="{Binding Title}" 
+					LineBreakMode="WordWrap"
+					TextColor="White"
+					/>
+			</StackLayout>
+
+
+			<StackLayout 
+				Orientation="Horizontal" 
+				HorizontalOptions="Fill"
+				VerticalOptions="FillAndExpand"
+				Grid.Row="1">
+					<Label 
+						Text="{Binding Section}"
+						TextColor="White" 
+						FontAttributes="Bold" 
+						HorizontalOptions="StartAndExpand" 
+						VerticalOptions="End" />
+					<Label 
+						Text="{Binding When}" 
+						TextColor="White" 
+						HorizontalOptions="End" 
+						TranslationX="-10" 
+						VerticalOptions="End"/>
+					<Label HorizontalOptions="End" VerticalOptions="End">
+						<Label.FormattedText>
+							<FormattedString>
+								<FormattedString.Spans>
+									<Span 
+										Text="&#xf0c0; " 
+										FontSize="{StaticResource BaseFontSize}" 
+										ForegroundColor="{StaticResource AccentColor}" 
+										FontFamily="{x:Static artina:FontAwesome.FontName}" />
+									<Span 
+										Text="77"	
+										FontSize="{StaticResource BaseFontSize}" 
+										ForegroundColor="{StaticResource AccentColor}" />
+								</FormattedString.Spans>
+							</FormattedString>
+						</Label.FormattedText>
+					</Label>
+					<Label HorizontalOptions="End" VerticalOptions="End">
+						<Label.FormattedText>
+							<FormattedString>
+								<FormattedString.Spans>
+									<Span 
+										Text="&#xf004; " 
+										FontSize="{StaticResource BaseFontSize}" 
+										ForegroundColor="{StaticResource AccentColor}" 
+										FontFamily="{x:Static artina:FontAwesome.FontName}"/>
+									<Span 
+										Text="22" 
+										FontSize="{StaticResource BaseFontSize}" 
+										ForegroundColor="{StaticResource AccentColor}" />
+								</FormattedString.Spans>
+							</FormattedString>
+						</Label.FormattedText>
+					</Label>
+				</StackLayout>
+
+		</Grid>
+	</Grid>
+		
+</ContentView>

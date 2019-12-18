@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.CommonViewsPage"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:sample="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial">
+	<ScrollView>
+		<StackLayout Padding="20">
+
+			
+
+			<!-- CustomNavBar -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf000; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="CustomNavBar" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<commonViews:CustomNavBar />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+			<!-- CircleIcon -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf000; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="CircleIcon" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<commonViews:CircleIcon HeightRequest="64" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+			<!-- Badge -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf000; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Badge" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<commonViews:Badge 
+				BadgeText="7+" 
+				BadgeTextColor="#FFF" 
+				BadgeBackgroundColor="#F00"/>
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+
+			<!-- BrandBlock -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf000; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="BrandBlock" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<StackLayout BackgroundColor="{ StaticResource MainMenuBackgroundColor }">
+				<commonViews:BrandBlock />
+			</StackLayout>
+
+		</StackLayout>
+	</ScrollView>
+
+</ContentPage>

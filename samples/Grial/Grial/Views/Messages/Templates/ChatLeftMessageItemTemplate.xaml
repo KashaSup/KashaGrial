@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	x:Class="UXDivers.Artina.Grial.ChatLeftMessageItemTemplate">
+
+
+	<Grid
+		ColumnSpacing="0" 
+		RowSpacing="0" 
+		VerticalOptions="StartAndExpand"
+		Padding="0,0,0,20"
+		>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+		<!-- LEFT TRIANGLE -->
+		<Label
+			Grid.Row="1" Grid.Column="1"
+			HorizontalTextAlignment="Start"
+			VerticalTextAlignment="Start"
+			TranslationX="10"
+			TranslationY="-11"
+			Text="&#xf0d7;"
+			TextColor="{ StaticResource AccentColor }" 
+			Style="{StaticResource FontIcon}" 
+			FontSize="26"/>
+
+		<!-- BALLOON BACKGROUND -->
+		<StackLayout
+			BackgroundColor="{ StaticResource AccentColor }" 
+			Grid.Row="0" Grid.Column="1"
+			Padding="10"
+			VerticalOptions="EndAndExpand" >
+
+			<Label
+				TextColor="#FFFFFF"
+				FontSize="14"
+				Text="{ Binding Body }" 
+			/>
+		</StackLayout>
+
+
+		<!-- LEFT AVATAR -->
+		<artina:CircleImage 
+			Grid.Row="1" Grid.Column="0"
+			Source="{ Binding From.Avatar }"
+			Style="{ StaticResource AvatarXSmall }"
+			HorizontalOptions="Start" 
+			TranslationY="10"
+		/>
+
+		<!-- BY -->
+		<Label 
+			Grid.Row="1" Grid.Column="1"
+			HorizontalOptions="Start"
+			VerticalOptions="CenterAndExpand"
+			TranslationX="10"
+			TranslationY="10"
+			FontSize ="12"
+			TextColor="#FF212121"
+			Text="{ Binding From.Name }" 
+		/>
+
+		<!-- WHEN -->
+		<Label 
+			Grid.Row="1" Grid.Column="1"
+			TranslationY="10"
+			FontSize ="12"
+			TextColor="#FF212121"
+			HorizontalTextAlignment="End"
+			VerticalTextAlignment="Center"
+			Text="{ Binding When }" 
+		/>
+
+
+	</Grid>
+</ContentView>

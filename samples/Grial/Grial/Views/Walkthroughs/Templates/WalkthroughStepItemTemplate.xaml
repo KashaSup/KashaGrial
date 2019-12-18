@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="UXDivers.Artina.Grial.WalkthroughStepItemTemplate"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	x:Name="StepContentPage"
+	Style="{DynamicResource WalkthroughStepStyle}">
+
+	<AbsoluteLayout Padding="0">
+		<!--BACKGROUND IMAGE-->
+		<Image
+			x:Name="img"
+			Source="{ StaticResource WalkthroughStepBackgroundImage0 }"
+			Aspect="AspectFill"
+			AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+			AbsoluteLayout.LayoutFlags="All" 
+			/>
+
+		<!--LAYOUT-->
+		<Grid Padding="20" VerticalOptions="FillAndExpand"
+			AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+			AbsoluteLayout.LayoutFlags="All">
+
+			<!--CLOSE ICON-->
+			<StackLayout
+				HorizontalOptions="End"
+				VerticalOptions="Start">
+
+				<Label
+					FontSize="30"
+					Text="&#xf00d;"
+					HorizontalTextAlignment="Center"
+					VerticalTextAlignment="Center"
+					TextColor="White"
+					HeightRequest="30"
+					WidthRequest="30"
+					Style="{StaticResource FontIcon}">
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnCloseButtonClicked" />
+					</Label.GestureRecognizers>
+				</Label>
+
+			</StackLayout>
+
+			<!--TEXT DESCRIPTION-->
+			<StackLayout WidthRequest="200" 
+				HorizontalOptions="Start" 
+				VerticalOptions="Start" 
+				TranslationY="20">
+
+				<Label
+					x:Name="DescriptionLabel"
+					Text=""
+					TextColor="White"
+					FontSize="22"/>
+				<BoxView HeightRequest="6" WidthRequest="130" HorizontalOptions="Start" BackgroundColor="{StaticResource BrandColor}"/>
+
+			</StackLayout>
+
+			<Label
+				x:Name="IconLabel"
+				Style="{DynamicResource WalkthroughStepIconStyle}"
+				/>
+
+			<Label
+				x:Name="HeaderLabel"
+				HorizontalTextAlignment="Center"
+				TextColor="White"
+				FontSize="32"
+				FontAttributes="Bold"/>
+			
+			<!--BUTTON NEXT-->
+			<StackLayout VerticalOptions="End">
+				<artina:Button 
+					Style="{DynamicResource PrimaryActionButtonStyle}"
+					x:Name="PrimaryActionButton"
+					Text="GET STARTED!"
+					Clicked="OnPrimaryActionButtonClicked"/>
+				</StackLayout>
+			</Grid>
+	</AbsoluteLayout>
+
+</ContentPage>

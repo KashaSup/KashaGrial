@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.MessagesListPage"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:sample="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	xmlns:templates="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	Title="Messages"
+	>
+
+
+	<StackLayout>
+		
+		<ListView 
+			x:Name="listViewMessages" 
+			BackgroundColor="White"
+			RowHeight="200"
+			HasUnevenRows = "true"
+			IsPullToRefreshEnabled ="true"
+			Refreshing="OnRefreshing"
+			ItemTapped="OnItemTapped"
+			 
+			ItemsSource="{ Binding SampleData.Messages }"
+			>
+
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+
+						<ViewCell.ContextActions>
+							<MenuItem 
+								Clicked="OnMore"
+								Text="More" />
+							<MenuItem Clicked="OnDelete"
+								Text="Delete" 
+								IsDestructive="True" />
+						</ViewCell.ContextActions>
+
+						<templates:MessageItemTemplate/>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+
+	</StackLayout>
+</ContentPage>

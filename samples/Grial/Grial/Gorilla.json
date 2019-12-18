@@ -1,0 +1,12 @@
+{
+	"knownAssemblies": [
+		{
+			"name": "UXDivers.Artina.Shared",
+			"types": null
+		}
+	],
+
+    "navigationPage": {
+        "all": true
+    }
+}

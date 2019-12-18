@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{B6C3195C-0075-436E-826B-FEF49284DD32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UXDivers.Artina.Grial</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <NuGetPackageImportStamp>8b97c5cf</NuGetPackageImportStamp>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AssemblyName>UXDivers.Artinal.Grial.Droid</AssemblyName>
+    <ReleaseVersion>1.5</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="UXDivers.Artina.Shared">
+      <HintPath>..\..\..\lib\pcl\UXDivers.Artina.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.23.3.0\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsViewGroup">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="UXDivers.Artina.Shared.Droid">
+      <HintPath>../../../lib\/android/UXDivers.Artina.Shared.Droid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
+    <Compile Include="Renderers\CustomFontLabelRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Resources\values\Colors.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Colors.xml</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Renderers\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\values-v21\" />
+    <Folder Include="Resources\values-v19\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable\friend_thumbnail_27.jpg" />
+    <AndroidResource Include="Resources\drawable\friend_thumbnail_31.jpg" />
+    <AndroidResource Include="Resources\drawable\friend_thumbnail_34.jpg" />
+    <AndroidResource Include="Resources\drawable\friend_thumbnail_55.jpg" />
+    <AndroidResource Include="Resources\drawable\friend_thumbnail_71.jpg" />
+    <AndroidResource Include="Resources\drawable\friend_thumbnail_75.jpg" />
+    <AndroidResource Include="Resources\drawable\friend_thumbnail_93.jpg" />
+    <AndroidResource Include="Resources\drawable\hamburguer_icon.png" />
+    <AndroidResource Include="Resources\values\Colors.xml">
+      <DependentUpon>Colors.tt</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\walkthrough_generic_phone_bg.png" />
+    <AndroidResource Include="Resources\drawable\walkthrough_bg_0.png" />
+    <AndroidResource Include="Resources\drawable\walkthrough_bg_1.png" />
+    <AndroidResource Include="Resources\drawable\walkthrough_bg_2.png" />
+    <AndroidResource Include="Resources\drawable\article_image_0.jpg" />
+    <AndroidResource Include="Resources\drawable\article_image_1.jpg" />
+    <AndroidResource Include="Resources\drawable\article_image_2.jpg" />
+    <AndroidResource Include="Resources\drawable\article_image_3.jpg" />
+    <AndroidResource Include="Resources\drawable\article_image_4.jpg" />
+    <AndroidResource Include="Resources\drawable\article_image_5.jpg" />
+    <AndroidResource Include="Resources\drawable\dashboard_thumbnail_1.jpg" />
+    <AndroidResource Include="Resources\drawable\dashboard_thumbnail_3.jpg" />
+    <AndroidResource Include="Resources\drawable\dashboard_thumbnail_4.jpg" />
+    <AndroidResource Include="Resources\drawable\dashboard_thumbnail_5.jpg" />
+    <AndroidResource Include="Resources\drawable\dashboard_thumbnail_6.jpg" />
+    <AndroidResource Include="Resources\drawable\dashboard_thumbnail_7.jpg" />
+    <AndroidResource Include="Resources\drawable\product_item_2.jpg" />
+    <AndroidResource Include="Resources\drawable\product_item_3.jpg" />
+    <AndroidResource Include="Resources\drawable\product_item_4.jpg" />
+    <AndroidResource Include="Resources\drawable\product_item_5.jpg" />
+    <AndroidResource Include="Resources\drawable\product_item_6.jpg" />
+    <AndroidResource Include="Resources\drawable\product_item_7.jpg" />
+    <AndroidResource Include="Resources\drawable\profile_preview.jpg" />
+    <AndroidResource Include="Resources\drawable\social_album_1.jpg" />
+    <AndroidResource Include="Resources\drawable\social_album_2.jpg" />
+    <AndroidResource Include="Resources\drawable\social_album_3.jpg" />
+    <AndroidResource Include="Resources\drawable\social_album_4.jpg" />
+    <AndroidResource Include="Resources\drawable\social_album_5.jpg" />
+    <AndroidResource Include="Resources\drawable\social_album_6.jpg" />
+    <AndroidResource Include="Resources\drawable\social_album_7.jpg" />
+    <AndroidResource Include="Resources\drawable\social_album_8.jpg" />
+    <AndroidResource Include="Resources\drawable\social_album_9.jpg" />
+    <AndroidResource Include="Resources\drawable\welcome_bg.jpg" />
+    <AndroidResource Include="Resources\drawable\product_item_0.jpg" />
+    <AndroidResource Include="Resources\drawable\product_item_1.jpg" />
+    <AndroidResource Include="Resources\drawable\social_header_bg_0.jpg" />
+    <AndroidResource Include="Resources\drawable\social_header_bg_1.jpg" />
+    <AndroidResource Include="Resources\drawable\user_profile_1.jpg" />
+    <AndroidResource Include="Resources\drawable\user_profile_0.jpg" />
+    <AndroidResource Include="Resources\drawable\dashboard_thumbnail_0.jpg" />
+    <AndroidResource Include="Resources\drawable\dashboard_thumbnail_8.jpg" />
+    <AndroidResource Include="Resources\drawable\dashboard_thumbnail_2.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\article_image_0.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\article_image_1.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\article_image_2.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\article_image_3.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\article_image_4.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\article_image_5.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\dashboard_thumbnail_1.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\dashboard_thumbnail_2.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\dashboard_thumbnail_3.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\dashboard_thumbnail_4.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\dashboard_thumbnail_5.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\dashboard_thumbnail_6.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\dashboard_thumbnail_7.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\dashboard_thumbnail_8.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\product_item_0.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\product_item_1.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\product_item_2.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\product_item_3.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\product_item_4.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\product_item_5.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\product_item_6.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\product_item_7.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\profile_preview.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\signup_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_album_1.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_album_3.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_album_4.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_album_5.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_album_7.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_album_8.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_header_bg_.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_header_bg_1.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_header_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\user_profile_0.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\user_profile_1.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\welcome_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\article_image_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\article_image_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\article_image_2.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\article_image_3.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\article_image_4.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\article_image_5.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dashboard_thumbnail_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dashboard_thumbnail_2.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dashboard_thumbnail_3.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dashboard_thumbnail_4.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dashboard_thumbnail_5.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dashboard_thumbnail_6.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dashboard_thumbnail_7.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dashboard_thumbnail_8.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\product_item_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\product_item_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\product_item_2.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\product_item_3.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\product_item_4.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\product_item_5.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\product_item_6.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\product_item_7.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\profile_preview.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\signup_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\social_album_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\social_album_3.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\social_album_4.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\social_album_5.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\social_album_7.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\social_album_8.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\social_header_bg_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tie_tanktop.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\user_profile_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\user_profile_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\welcome_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\product_item_8.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\social_header_bg_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\article_image_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\article_image_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\article_image_2.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\article_image_3.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\article_image_4.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\article_image_5.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dashboard_thumbnail_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dashboard_thumbnail_2.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dashboard_thumbnail_3.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dashboard_thumbnail_4.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dashboard_thumbnail_5.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dashboard_thumbnail_6.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dashboard_thumbnail_7.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dashboard_thumbnail_8.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dashboard_thumbnail_9.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\product_item_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\product_item_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\product_item_3.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\product_item_4.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\product_item_5.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\product_item_6.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\product_item_7.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\profile_preview.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\signup_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\social_album_2.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\social_album_3.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\social_album_4.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\social_album_5.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\social_album_7.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\social_album_8.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\social_album_9.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\social_header_bg_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\social_header_bg_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_profile_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_profile_1.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\welcome_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\dashboard_thumbnail_0.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\social_album_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dashboard_thumbnail_0.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\social_album_0.jpg" />
+    <AndroidResource Include="Resources\drawable\signup_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\hamburguer_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\hamburguer_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\hamburguer_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\walkthrough_generic_phone_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\walkthrough_generic_phone_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\walkthrough_generic_phone_bg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\walkthrough_bg_1.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\walkthrough_bg_2.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\walkthrough_bg_1.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\walkthrough_bg_2.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\walkthrough_bg_1.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\walkthrough_bg_2.png" />
+    <AndroidResource Include="Resources\drawable\Resources.Drawable.Splash.xml" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\logo.png" />
+    <AndroidResource Include="Resources\values-v19\bools.xml" />
+    <AndroidResource Include="Resources\values\Style.xml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\layout\Tabs.axml" />
+    <AndroidResource Include="Resources\values-v21\Style.xml" />
+    <AndroidResource Include="Resources\drawable\tabs0_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fontawesome-webfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Grial\Grial.csproj">
+      <Project>{7041522B-6406-4AA7-8C6D-8AD1661DD392}</Project>
+      <Name>Grial</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

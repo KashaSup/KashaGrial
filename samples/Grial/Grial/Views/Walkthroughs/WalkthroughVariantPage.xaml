@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CarouselPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.WalkthroughVariantPage"
+	xmlns:uikit="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	Style="{DynamicResource WalkthroughStepStyle}">
+
+	<uikit:WalkthroughVariantStepItemTemplate 
+		BackgroundColor="{ StaticResource BrandColor }"
+		StepBackgroundImage="{ StaticResource WalkthroughStepGenericPhoneBackgroundImage }"
+		Header="Welcome to Grial" 
+		Text="A robust and flexible &#10; UIKit for Xamarin Forms!"
+		IconText="&#xf000;" 
+		IconColor="{ DynamicResource WalkthroughStepIconColor1 }"
+		ButtonText="Next &gt;"
+		/>
+
+	<uikit:WalkthroughVariantStepItemTemplate 
+		BackgroundColor="{ StaticResource ComplementColor }"
+		StepBackgroundImage="{ StaticResource WalkthroughStepGenericPhoneBackgroundImage }"
+		Header="Based on Artina" 
+		Text="The most flexible UIKit &#10; framework for Xamarin Forms!"
+		IconText="&#xf004;"
+		IconColor="#88FF0000" 
+		ButtonText="Next &gt;"
+		ButtonBackgroundColor="#FF0000FF"
+		/>
+
+	<uikit:WalkthroughVariantStepItemTemplate 
+		BackgroundColor="{ StaticResource WalkthroughStepBackgroundColor1 }"
+		StepBackgroundImage="{ StaticResource WalkthroughStepGenericPhoneBackgroundImage }"
+		Header="Enjoy it!" 
+		Text="Handcrafted with love &#10; by UXdivers" 
+		IconText="&#xf1ae;" 
+		ButtonText="Finish!" 
+		ButtonBackgroundColor="#d6303a"
+		/>
+</CarouselPage>

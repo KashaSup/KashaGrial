@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	Title="Social" 
+	x:Class="UXDivers.Artina.Grial.SocialPage" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" 
+	xmlns:templates="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	x:Name="page" 
+	BackgroundColor="White">
+
+	<ContentPage.Content>
+		<ScrollView>
+
+			<!--GRID WRAPPER-->
+			<Grid Padding="0">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="Auto" />
+				</Grid.RowDefinitions>
+
+				<!--SOCIAL HEADER-->
+				<Grid Grid.Row="0" 
+					HeightRequest="300" 
+					BackgroundColor="Black" 
+					Padding="0"
+					>
+
+					<!-- BACKGROUND IMAGE -->
+ 					<Image 
+						BackgroundColor="Black" 
+						Source="{ StaticResource SocialHeaderBackgroundImage0 }" 
+						IsOpaque="false" 
+						Opacity="0.75" 
+						Aspect="AspectFill"
+						HorizontalOptions="FillAndExpand" 
+						VerticalOptions="FillAndExpand"/>
+
+
+				<StackLayout 
+					Orientation="Vertical" 
+					Spacing="20"
+					>
+
+					<Grid 
+						HorizontalOptions="Center"
+						VerticalOptions="Center"
+						TranslationY="25">
+
+						<!-- AVATAR -->
+						<artina:CircleImage 
+							x:Name="avatar"
+							Source="{ StaticResource ThemeAvatarSample0Image }"
+							HeightRequest="100"
+							WidthRequest="100"
+							/>
+
+						<!-- BADGE -->
+						<commonViews:Badge 
+							BadgeText="10+" 
+							BadgeTextColor="#FFF" 
+							BadgeBackgroundColor="#22c064"
+							HorizontalOptions="Center"
+							VerticalOptions="Start"
+							TranslationX="40"
+							/>
+					</Grid>
+
+					<!-- USER NAME AND DESCRIPTION -->
+					<StackLayout 
+						Padding="20">
+						<Label 
+							Text="Robert Stainford" 
+							TextColor="White" 
+							HorizontalTextAlignment="Center" 
+							FontSize="18" 
+							FontAttributes="Bold" />
+						<Label 
+							TextColor="White" 
+							HorizontalTextAlignment="Center" 
+							Text="Passion driven designer and developer. Frustrated musician and father of two." />
+					</StackLayout>
+				</StackLayout>
+
+
+					<!-- TOOLBAR -->
+					<Grid 
+						VerticalOptions="End"
+						Style="{StaticResource ToolbarStyle}"
+						BackgroundColor="{StaticResource TranslucidBlack}"
+						>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+
+						<Label 
+							Grid.Column="0" 
+							HorizontalTextAlignment="Center"
+							VerticalTextAlignment="Center">
+							<Label.FormattedText>
+								<FormattedString>
+									<FormattedString.Spans>
+										<Span 
+											Text="&#xf08a; " 
+											FontSize="{StaticResource BaseFontSize}" 
+											ForegroundColor="{StaticResource AccentColor}" 
+											FontFamily="{x:Static artina:FontAwesome.FontName}" />
+										<Span 
+											Text="2963" 
+											FontSize="{StaticResource BaseFontSize}" 
+											ForegroundColor="White" />
+									</FormattedString.Spans>
+								</FormattedString>
+							</Label.FormattedText>
+						</Label>
+
+						<Label Grid.Column="1" 
+							HorizontalTextAlignment="Center"
+							VerticalTextAlignment="Center" >
+							<Label.FormattedText>
+								<FormattedString>
+									<FormattedString.Spans>
+										<Span 
+											Text="&#xf075;  " 
+											FontSize="{StaticResource BaseFontSize}" 
+											ForegroundColor="{StaticResource AccentColor}" 
+											FontFamily="{x:Static artina:FontAwesome.FontName}" />
+										<Span 
+											Text="2963" 
+											FontSize="{StaticResource BaseFontSize}" 
+											ForegroundColor="White" />
+									</FormattedString.Spans>
+								</FormattedString>
+							</Label.FormattedText>
+						</Label>
+
+						<Label Grid.Column="2" 
+							HorizontalTextAlignment="Center"
+							VerticalTextAlignment="Center" >
+							<Label.FormattedText>
+								<FormattedString>
+									<FormattedString.Spans>
+										<Span 
+											Text="&#xf183;  " 
+											FontSize="{StaticResource BaseFontSize}" 
+											ForegroundColor="{StaticResource AccentColor}" 
+											FontFamily="{x:Static artina:FontAwesome.FontName}" />
+										<Span 
+											Text="2963" 
+											FontSize="{StaticResource BaseFontSize}" 
+											ForegroundColor="White" />
+									</FormattedString.Spans>
+								</FormattedString>
+							</Label.FormattedText>
+						</Label>
+
+						<Label Grid.Column="3" 
+							HorizontalTextAlignment="Center"
+							VerticalTextAlignment="Center" >
+							<Label.FormattedText>
+								<FormattedString>
+									<FormattedString.Spans>
+										<Span 
+											Text="&#xf006; " 
+											FontSize="{StaticResource BaseFontSize}" 
+											ForegroundColor="{StaticResource AccentColor}" 
+											FontFamily="{x:Static artina:FontAwesome.FontName}" />
+										<Span 
+											Text="2963" 
+											FontSize="{StaticResource BaseFontSize}"  
+											ForegroundColor="White" />
+									</FormattedString.Spans>
+								</FormattedString>
+							</Label.FormattedText>
+						</Label>
+					</Grid>
+
+
+
+				</Grid>
+
+				<Grid Grid.Row="1">
+
+					<!--SOCIAL HEADER-->
+					<StackLayout Padding="0">
+						  	<templates:SocialHeaderStyleTemplate 
+							Text="PHOTOS"
+							IconText="&#xf03e; "/>
+
+						<!-- SOCIAL IMAGE GALLERY GRID -->
+						<artina:GridOptionsView 
+								Padding="10,0" 
+								ColumnSpacing="10" 
+								RowSpacing="10" 
+								VerticalOptions="Fill" 
+								HeightRequest="400" 
+								ColumnCount="3"
+								RowCount="3"
+								ItemsSource="{Binding Images}">
+
+								<artina:GridOptionsView.ItemTemplate>
+									<DataTemplate>
+										<templates:SocialGalleryImage Image="{Binding .}"/>
+									</DataTemplate>
+								</artina:GridOptionsView.ItemTemplate>
+						</artina:GridOptionsView>
+
+
+						<!-- SOCIAL HEADER -->
+						<templates:SocialHeaderStyleTemplate 
+							Text="FRIENDS"
+							IconText="&#xf1ae; "/>
+
+						<BoxView 
+							Style="{StaticResource SocialHeaderStyleBorderBottomStyle}" />
+
+						<!-- FRIENDS LIST -->
+						<ListView 
+							ItemsSource="{Binding Friends}"
+							RowHeight="66" 
+							  >
+
+							<ListView.ItemTemplate>
+								<DataTemplate>
+									<ViewCell>
+										<templates:FriendItemTemplate />
+									</ViewCell>
+								</DataTemplate>
+							</ListView.ItemTemplate>
+						</ListView>
+
+					</StackLayout>
+				</Grid>
+			</Grid>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

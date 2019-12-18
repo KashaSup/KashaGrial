@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.WalkthroughVariantStepItemTemplate"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	x:Name="StepContentPage"
+	Style="{DynamicResource WalkthroughStepStyle}">
+
+	<AbsoluteLayout Padding="0">
+		<!-- Background Image -->
+		<Image
+			x:Name="img"
+			Source="{ StaticResource WalkthroughStepBackgroundImage0 }"
+			Aspect="AspectFill"
+			TranslationY="40"
+			AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+			AbsoluteLayout.LayoutFlags="All" 
+			/>
+
+
+
+	<Grid
+		ColumnSpacing="0" RowSpacing="0"
+		AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+		AbsoluteLayout.LayoutFlags="All"
+	>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="80" />
+		</Grid.RowDefinitions>
+		
+		<!-- ROW 0 (TOP) -->
+		<!-- Close Icon -->
+		<StackLayout
+			HorizontalOptions="End"
+			VerticalOptions="Start"
+			Grid.Row="0"
+			Padding="0,20,20,0">
+
+			<Label
+				FontSize="30"
+				Text="&#xf00d;"
+				HorizontalTextAlignment="Center"
+				VerticalTextAlignment="Center"
+				TextColor="White"
+				HeightRequest="30"
+				WidthRequest="30"
+				Style="{StaticResource FontIcon}">
+				<Label.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnCloseButtonClicked" />
+				</Label.GestureRecognizers>
+			</Label>
+
+			</StackLayout>
+
+
+
+		<!-- ROW 1 (MIDDLE) -->
+		<StackLayout 
+			Padding="20"  
+			VerticalOptions="FillAndExpand" 
+			Grid.Row="1"
+		>
+			<StackLayout VerticalOptions="EndAndExpand"
+				Padding="40,0,40,40"
+				HeightRequest="240">
+				<Label
+					x:Name="IconLabel"
+					Style="{DynamicResource WalkthroughStepIconStyle}"
+					VerticalOptions="Center"
+				/>
+
+				<Label
+					x:Name="HeaderLabel"
+					HorizontalTextAlignment="Center"
+					VerticalTextAlignment="Center"
+					TextColor="White"
+					FontSize="32"
+					FontAttributes="Bold"
+				/>
+
+				<Label
+					x:Name="DescriptionLabel"
+					Text="The most robust and flexible UIKit for Xamarin Forms! "
+					VerticalTextAlignment="Center"
+					HorizontalTextAlignment="Center"
+					TextColor="White"
+					FontSize="18"
+					/>
+			</StackLayout>
+		</StackLayout>
+
+
+
+		<!-- ROW 2 (BOTTOM) -->
+		<StackLayout 
+			x:Name="OverlapedButtonContainer"
+			Padding="20,0,20,20" 
+			VerticalOptions="EndAndExpand"
+			Grid.Row="2">
+
+			<artina:Button 
+				Style="{DynamicResource PrimaryActionButtonStyle}"
+				x:Name="PrimaryActionButton"
+				Text="GET STARTED!"
+				Clicked="OnPrimaryActionButtonClicked"
+			/>
+		</StackLayout>
+
+	</Grid>
+
+	</AbsoluteLayout>
+
+</ContentPage>

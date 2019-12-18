@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.SocialGalleryImage"
+	x:Name="Root">
+
+	<ContentView.Content>
+		<Image
+			Aspect="AspectFill"
+			VerticalOptions="FillAndExpand" 
+			HorizontalOptions="FillAndExpand"
+			Source="{Binding Source={x:Reference Root}, Path=Image}"/>
+	</ContentView.Content>
+
+	<ContentView.GestureRecognizers>
+		<TapGestureRecognizer Tapped="OnImageTapped" />
+	</ContentView.GestureRecognizers>
+</ContentView>

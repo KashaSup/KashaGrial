@@ -1,0 +1,10 @@
+diff a/source/Grial/App.xaml.cs b/source/Grial/App.xaml.cs	(rejected hunks)
+@@ -14,6 +14,8 @@
+ 			InitializeComponent ();
+ 
+ 			MainPage = GetMainPage();
++
++			MainPage.SetValue (NavigationPage.BarTextColorProperty, Color.White);
+ 		}
+ 			
+ 		public static Page GetMainPage()

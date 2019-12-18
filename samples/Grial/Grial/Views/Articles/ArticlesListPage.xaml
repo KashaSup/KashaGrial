@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.ArticlesListPage"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:views="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	Title="Articles List">
+
+		<ListView 
+			SeparatorVisibility="None"
+			SeparatorColor="#CC000000"
+			ItemsSource="{Binding PostsList}"
+			RowHeight="240"
+			ItemTapped="OnItemTapped"
+			HasUnevenRows="false"
+			>
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<views:ArticleItemTemplate/>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+
+</ContentPage>

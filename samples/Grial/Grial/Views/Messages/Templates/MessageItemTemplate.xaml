@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.MessageItemTemplate"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared">
+
+	<ContentView.Resources>
+		<ResourceDictionary>
+			
+			<artina:BooleanToObjectConverter x:Key="isStaredIconConverter" x:TypeArguments="x:String"
+			TrueValue="&#xf005;" FalseValue="&#xf006;"/>
+
+			<artina:BooleanToObjectConverter x:Key="isReadConverter" x:TypeArguments="FontAttributes">
+				<artina:BooleanToObjectConverter.TrueValue>
+					<FontAttributes>None</FontAttributes>
+				</artina:BooleanToObjectConverter.TrueValue>
+				<artina:BooleanToObjectConverter.FalseValue>
+					<FontAttributes>Bold</FontAttributes>
+				</artina:BooleanToObjectConverter.FalseValue>
+			</artina:BooleanToObjectConverter>
+		</ResourceDictionary>
+	</ContentView.Resources>
+
+	<StackLayout
+		Spacing="0" 
+		Orientation="Horizontal" 
+		Padding="10, 5, 10, 5"
+		HorizontalOptions="FillAndExpand" >
+
+		<artina:CircleImage Source="{Binding From.Avatar}"  
+			Style="{ StaticResource Avatar }"
+			Aspect ="AspectFill"
+			HorizontalOptions = "Center"
+			VerticalOptions = "Start" 
+			TranslationX="8" 
+			TranslationY="14"/>
+
+		<StackLayout 
+			Padding="10, 0, 0, 0" Spacing="0"
+			Orientation="Horizontal"
+			HorizontalOptions="FillAndExpand">
+				
+
+				<StackLayout HorizontalOptions="FillAndExpand" Spacing="0" Padding="10">
+					<StackLayout Orientation="Horizontal">
+						<Label 
+							Text="{Binding From.Name}" 
+							HorizontalOptions="Fill"
+							VerticalOptions="EndAndExpand"
+							TextColor="#FF212121"
+							FontAttributes="{
+								Binding IsRead,
+								Converter={ StaticResource isReadConverter 
+							}"
+						/>
+
+						<Label 
+							FontAttributes="Bold"
+							TextColor = "#FF777777"
+							Text="{Binding ThreadCount}" 
+							HorizontalOptions="FillAndExpand"
+							VerticalOptions="EndAndExpand"/>
+						
+						<Label 
+							Style="{StaticResource FontIcon}"
+							Text="&#xf0c6;"  
+							HorizontalOptions="EndAndExpand"
+							VerticalOptions="Center"
+							IsVisible="{Binding HasAttachment}"
+							/>
+						<Label 
+							Text="{Binding When}" 
+							FontSize ="12"
+							HorizontalTextAlignment="End" 
+							HorizontalOptions="End" 
+							VerticalOptions="Center"
+							/>
+					</StackLayout>
+					<StackLayout Orientation="Horizontal" >
+						<Label 
+							Text="{Binding Title}"
+							HorizontalOptions="FillAndExpand"
+							VerticalOptions="FillAndExpand"
+						/>
+					</StackLayout>
+					<StackLayout Orientation="Horizontal" Padding="0,8,0,0">
+						
+						<Label 
+							Text="{Binding Body}"
+							LineBreakMode="WordWrap"
+							HorizontalOptions="FillAndExpand"
+							VerticalOptions="FillAndExpand"
+
+						/>
+
+						<Label  
+							HorizontalTextAlignment="End" 
+							HorizontalOptions="End"
+							VerticalOptions="EndAndExpand"
+							FontSize ="16"
+							WidthRequest="24"
+							Style="{StaticResource FontIcon}"
+							Text="{	
+									Binding IsStared, 
+									Converter={ StaticResource isStaredIconConverter 
+								}"
+							TextColor="#FFFFDC77" 
+							/>
+					</StackLayout>
+				</StackLayout>
+
+			</StackLayout>
+	</StackLayout>
+</ContentView>

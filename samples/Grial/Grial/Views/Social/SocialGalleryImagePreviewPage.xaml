@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.SocialGalleryImagePreviewPage">
+
+	<ScrollView>
+
+		<AbsoluteLayout>
+
+			<StackLayout 
+				BackgroundColor="Black"
+				VerticalOptions="FillAndExpand" 
+				HorizontalOptions="FillAndExpand"
+				AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+				AbsoluteLayout.LayoutFlags="All"  >
+
+				<Image 
+					x:Name="img" 
+					HorizontalOptions="CenterAndExpand" 
+					VerticalOptions="CenterAndExpand" />
+			</StackLayout>
+
+			<!--CLOSE ICON-->
+			<StackLayout 
+				Padding="20"
+				HorizontalOptions="End"
+				VerticalOptions="Start"
+				AbsoluteLayout.LayoutBounds="0, 0, 1, .1"
+				AbsoluteLayout.LayoutFlags="All"
+				>
+				
+				<Label
+					FontSize="30"
+					Text="&#xf00d;"
+					HorizontalTextAlignment="End"
+					VerticalTextAlignment="Center"
+					TextColor="White"
+					HeightRequest="30"
+					WidthRequest="30"
+					Style="{StaticResource FontIcon}">
+					
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnCloseButtonClicked" />
+					</Label.GestureRecognizers>
+				
+				</Label>
+				
+			</StackLayout>
+
+		</AbsoluteLayout>
+
+	</ScrollView>
+
+</ContentPage>

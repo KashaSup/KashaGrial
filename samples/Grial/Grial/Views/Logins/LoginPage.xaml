@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	Title="Login"
+	x:Class="UXDivers.Artina.Grial.LoginPage"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	BackgroundColor="White"
+	BackgroundImage="{ StaticResource SignUpBackgroundImage }"
+	 >
+
+	<ScrollView>
+		<!-- MAIN CONTAINER -->
+		<Grid
+			ColumnSpacing="0" 
+			RowSpacing="0" 
+			HorizontalOptions="Fill"
+			VerticalOptions="FillAndExpand" >
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="100" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="100" />
+			</Grid.RowDefinitions>
+
+			<!-- LOGO -->
+			<commonViews:BrandBlock 
+				Grid.Row="0"
+			/>
+
+			<!-- CLOSE ICON -->
+			<Label 
+				Style="{DynamicResource IconCloseLabelStyle}" 
+				HorizontalOptions="End"
+				VerticalOptions="Start"
+				TranslationX="-20"
+				TranslationY="20"
+				Grid.Row="0"
+			>
+				<Label.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnCloseButtonClicked" />
+				</Label.GestureRecognizers>
+			</Label>
+
+
+			<!---FIELDS CONTAINER-->
+			<Grid 
+				Padding="40, 0"
+				ColumnSpacing="0" 
+				RowSpacing="0" 
+				VerticalOptions="CenterAndExpand"
+				Grid.Row="1"
+				HeightRequest="160">
+
+				<StackLayout
+					Grid.Row="0"
+					VerticalOptions="StartAndExpand" >
+					<!---EMAIL FIELD--> 
+					<Entry
+						Placeholder="E-mail"
+						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+
+					<Label
+						HorizontalOptions="Start"
+						Text=" Please enter a valid e-mail " IsVisible="false"
+						Style="{DynamicResource ValidationEntryErrorStyle}"
+						/>
+
+				</StackLayout>
+
+				<!---PASSWORD FIELD-->
+				<Entry 
+					Grid.Row="2"
+					Placeholder="Password"
+					IsPassword="true"
+					Style="{DynamicResource ArtinaLoginEntryStyle}" 
+					VerticalOptions="StartAndExpand" />
+
+			</Grid>
+
+				
+			<!-- FOOTER -->
+			<StackLayout 
+				HorizontalOptions="Fill"
+				VerticalOptions="EndAndExpand" 
+				Padding="20"
+				Grid.Row="2" >
+
+				<artina:Button
+					Style="{DynamicResource PrimaryActionButtonStyle}"
+					VerticalOptions="End"
+					Text="Login" />
+			</StackLayout>
+
+		</Grid>
+	</ScrollView>
+</ContentPage>

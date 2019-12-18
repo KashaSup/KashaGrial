@@ -1,0 +1,601 @@
+{
+    "ArticleFeedItemTemplate.xaml": {
+        "Title": "The face of Wild Nature ",
+        "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+        "Section": "NATURE",
+        "Author": "UXDIVERS",
+        "Avatar": "friend_thumbnail_55.jpg",
+        "BackgroundImage": "article_image_0.jpg",
+        "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+        "QuoteAuthor": "Jaco Morrison",
+        "When": "JUN 15, 2015",
+        "Likes": "92",
+        "Followers": "2.4K"
+    },
+    "ArticleVariantItemTemplate.xaml": {
+        "Title": "The face of Wild Nature ",
+        "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+        "Section": "NATURE",
+        "Author": "UXDIVERS",
+        "Avatar": "friend_thumbnail_55.jpg",
+        "BackgroundImage": "article_image_0.jpg",
+        "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+        "QuoteAuthor": "Jaco Morrison",
+        "When": "JUN 15, 2015",
+        "Likes": "92",
+        "Followers": "2.4K"
+    },
+
+    "ArticleItemTemplate.xaml": {
+        "Title": "The face of Wild Nature ",
+        "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+        "Section": "NATURE",
+        "Author": "UXDIVERS",
+        "Avatar": "friend_thumbnail_55.jpg",
+        "BackgroundImage": "article_image_0.jpg",
+        "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+        "QuoteAuthor": "Jaco Morrison",
+        "When": "JUN 15, 2015",
+        "Likes": "92",
+        "Followers": "2.4K"
+    },
+    "CommentItemTemplate.xaml": {
+        "From": {
+            "Avatar"    : "friend_thumbnail_55.jpg",
+            "Name"      : "Jaco Morrison"
+        },
+        "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+        
+        "When": "JUN 15, 2015"
+    },
+    
+    "ArticlesListVariantPage.xaml": {
+        "PostsList": [
+            {
+                "Title": "The face of Wild Nature ",
+                "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+                "Section": "NATURE",
+                "Author": "UXDIVERS",
+                "Avatar": "friend_thumbnail_55.jpg",
+                "BackgroundImage": "article_image_0.jpg",
+                "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+                "QuoteAuthor": "Jaco Morrison",
+                "When": "JUN 15, 2015",
+                "Likes": "92",
+                "Followers": "2.4K"
+            },
+            {
+                "Title": "Upercut to glory",
+                "Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+                "Section": "SPORTS",
+                "Author": "Pat Davies",
+                "Avatar": "friend_thumbnail_27.jpg",
+                "BackgroundImage": "article_image_1.jpg",
+                "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+                "QuoteAuthor": "Pat Davies",
+                "When": "JUN 15, 2015",
+                "Likes": "92",
+                "Followers": "2.4K"
+            },
+            {
+                "Title": "Street and its influence on design",
+                "Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+                "Section": "DESIGN",
+                "Author": "Regina Joplin",
+                "Avatar": "friend_thumbnail_34.jpg",
+                "BackgroundImage": "article_image_2.jpg",
+                "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+                "QuoteAuthor": "Regina Joplin",
+                "When": "JUN 15, 2015",
+                "Likes": "92",
+                "Followers": "2.4K"
+            },
+            {
+                "Title": "The time for new adventures",
+                "Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+                "Section": "TRAVEL",
+                "Author": "UXDIVERS",
+                "Avatar": "friend_thumbnail_31.jpg",
+                "BackgroundImage": "article_image_2.jpg",
+                "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+                "QuoteAuthor": "SampleData.Friends[1].Name",
+                "When": "JUN 15, 2015",
+                "Likes": "92",
+                "Followers": "2.4K"
+            },
+            {
+                "Title": "Shooting like pros, learn how",
+                "Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+                "Section": "FREE TIME",
+                "Author": "Margaret Whites",
+                "Avatar": "friend_thumbnail_71.jpg",
+                "BackgroundImage": "article_image_4.jpg",
+                "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+                "QuoteAuthor": "Pat Davies",
+                "When": "JUN 15, 2015",
+                "Likes": "92",
+                "Followers": "2.4K"
+            },
+            {
+                "Title": "The search for healthy food begins",
+                "Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+                "Section": "HEALTH",
+                "Author": "Skyler Harrisson",
+                "Avatar": "friend_thumbnail_75.jpg",
+                "BackgroundImage": "article_image_5.jpg",
+                "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+                "QuoteAuthor": "Skyler Harrisson",
+                "When": "JUN 15, 2015",
+                "Likes": "92",
+                "Followers": "2.4K"
+            }
+        ]
+    },
+
+    "ArticleViewPage.xaml": {
+        "Post" : {
+            "Title": "The face of Wild Nature ",
+            "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+            "Section": "NATURE",
+            "Author": "UXDIVERS",
+            "Avatar": "friend_thumbnail_55.jpg",
+            "BackgroundImage": "article_image_0.jpg",
+            "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+            "QuoteAuthor": "Jaco Morrison",
+            "When": "JUN 15, 2015",
+            "Likes": "92",
+            "Followers": "2.4K",
+        },
+
+        "Comments" : [
+            {
+                "From": {
+                    "Name": "Janis Spector",
+                    "Avatar": "friend_thumbnail_31.jpg"
+                },
+                "When": "July 7",
+                "Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!."
+            },
+            {
+                "From": {
+                    "Name": "Janis Spector",
+                    "Avatar": "friend_thumbnail_31.jpg"
+                },
+                "When": "July 7",
+                "Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!."
+            }
+        ]
+    },
+
+    "DashboardItemTemplate.xaml" : {
+        "BackgroundColor" : "#c01e5c",
+        "BackgroundImage" : "dashboard_thumbnail_0.jpg",
+        "ShowBackgroundColor" : "true",
+        "Icon" : "(*)",
+        "Name" : "Dashboard Item"
+    },
+
+    "DashboardPage.xaml" : {
+        "Items" : 
+        [
+            {
+                "Name": "Social", 
+                "BackgroundImage": "dashboard_thumbnail_6.jpg",
+                "BackgroundColor" : "#c01e5c",
+                "Icon": "\uf0e6" 
+            },
+            {
+                "Name": "Articles",
+                "BackgroundImage": "dashboard_thumbnail_4.jpg",
+				"BackgroundColor" : "#ab1958",
+                "Icon": "\uf0f6" 
+            },
+            {
+                "Name": "Dashboards", 
+                "BackgroundImage": "dashboard_thumbnail_3.jpg",
+				"BackgroundColor" : "#861350",
+                "Icon": "\uf009" 
+            },
+            {
+                "Name": "Navigation", 
+                "BackgroundImage": "dashboard_thumbnail_2.jpg",
+				"BackgroundColor" : "#473957",
+                "Icon": "\uf0c9" 
+            },
+            {
+                "Name": "Logins", 
+                "BackgroundImage": "dashboard_thumbnail_5.jpg",
+				"BackgroundColor" : "#554666",
+                "Icon": "\uf023" 
+            },
+            {
+                "Name": "Ecommerce", 
+                "BackgroundImage": "dashboard_thumbnail_1.jpg",
+				"BackgroundColor" : "#5a5586",
+                "Icon": "\uf07a" 
+            },
+            {
+                "Name": "Walkthroughs", 
+                "BackgroundImage": "dashboard_thumbnail_7.jpg",
+				"BackgroundColor" : "#4d75a5",
+                "Icon": "\uf0d0" 
+            },
+            {
+                "Name": "Messages", 
+                "BackgroundImage": "dashboard_thumbnail_8.jpg",
+				"BackgroundColor" : "#509acb",
+                "Icon": "\uf003" 
+            },
+            {
+                "Name": "Grial Theme", 
+                "BackgroundImage": "dashboard_thumbnail_0.jpg",
+				"BackgroundColor" : "#5abaeb",
+                "Icon": "\uf1fc" 
+            },
+
+        ]
+    },
+    "DashboardFlatPage.xaml" : {
+        "Items" : 
+        [
+            {
+                "Name": "Social", 
+                "BackgroundImage": "dashboard_thumbnail_6.jpg",
+                "BackgroundColor" : "#c01e5c",
+                "Icon": "\uf0e6" 
+            },
+            {
+                "Name": "Articles",
+                "BackgroundImage": "dashboard_thumbnail_4.jpg",
+				"BackgroundColor" : "#ab1958",
+                "Icon": "\uf0f6" 
+            },
+            {
+                "Name": "Dashboards", 
+                "BackgroundImage": "dashboard_thumbnail_3.jpg",
+				"BackgroundColor" : "#861350",
+                "Icon": "\uf009" 
+            },
+            {
+                "Name": "Navigation", 
+                "BackgroundImage": "dashboard_thumbnail_2.jpg",
+				"BackgroundColor" : "#473957",
+                "Icon": "\uf0c9" 
+            },
+            {
+                "Name": "Logins", 
+                "BackgroundImage": "dashboard_thumbnail_5.jpg",
+				"BackgroundColor" : "#554666",
+                "Icon": "\uf023" 
+            },
+            {
+                "Name": "Ecommerce", 
+                "BackgroundImage": "dashboard_thumbnail_1.jpg",
+				"BackgroundColor" : "#5a5586",
+                "Icon": "\uf07a" 
+            },
+            {
+                "Name": "Walkthroughs", 
+                "BackgroundImage": "dashboard_thumbnail_7.jpg",
+				"BackgroundColor" : "#4d75a5",
+                "Icon": "\uf0d0" 
+            },
+            {
+                "Name": "Messages", 
+                "BackgroundImage": "dashboard_thumbnail_8.jpg",
+				"BackgroundColor" : "#509acb",
+                "Icon": "\uf003" 
+            },
+            {
+                "Name": "Grial Theme", 
+                "BackgroundImage": "dashboard_thumbnail_0.jpg",
+				"BackgroundColor" : "#5abaeb",
+                "Icon": "\uf1fc" 
+            },
+
+        ]
+    },
+    "DashboardWithImagesPage.xaml" : {
+        "Items" : 
+        [
+            {
+                "Name": "Social", 
+                "BackgroundImage": "dashboard_thumbnail_6.jpg",
+                "Icon": "\uf0e6" 
+            },
+            {
+                "Name": "Articles",
+                "BackgroundImage": "dashboard_thumbnail_4.jpg",
+                "Icon": "\uf0f6" 
+            },
+            {
+                "Name": "Dashboards", 
+                "BackgroundImage": "dashboard_thumbnail_3.jpg",
+                "Icon": "\uf009" 
+            },
+            {
+                "Name": "Navigation", 
+                "BackgroundImage": "dashboard_thumbnail_2.jpg",
+                "Icon": "\uf0c9" 
+            },
+            {
+                "Name": "Logins", 
+                "BackgroundImage": "dashboard_thumbnail_5.jpg",
+                "Icon": "\uf023" 
+            },
+            {
+                "Name": "Ecommerce", 
+                "BackgroundImage": "dashboard_thumbnail_1.jpg",
+                "Icon": "\uf07a" 
+            },
+            {
+                "Name": "Walkthroughs", 
+                "BackgroundImage": "dashboard_thumbnail_7.jpg",
+                "Icon": "\uf0d0" 
+            },
+            {
+                "Name": "Messages", 
+                "BackgroundImage": "dashboard_thumbnail_8.jpg",
+                "Icon": "\uf003" 
+            },
+            {
+                "Name": "Grial Theme", 
+                "BackgroundImage": "dashboard_thumbnail_0.jpg",
+                "Icon": "\uf1fc" 
+            },
+
+        ]
+    },
+
+    "ProductGridItemTemplate.xaml" : {
+        "Name": "Logo Tee",
+        "Image": "product_item_0.jpg",
+        "Price": "$39",
+        "ThumbnailHeight": "100",
+        "Manufacturer" : "UXDivers"
+    },
+
+    "SocialGalleryImagePreviewPage.xaml": {
+        "source": "profile_preview.jpg"
+    },
+    "FriendItemTemplate.xaml": {
+        "Avatar": "friend_thumbnail_31.jpg",
+        "Name": "Robert Stainford"
+    },
+    "ProductItemViewPage.xaml": {
+        "Name": "Logo Tee",
+        "Description": "Cotton blend lends for ultimate comfort.",
+        "Image": "product_item_0.jpg",
+        "Price": "$39",
+        "ThumbnailHeight": "100"
+    },
+    "ProductImageFullScreenPage.xaml": {
+        "source": "product_item_0.jpg"
+    },
+    "ChatLeftMessageItemTemplate.xaml": {
+        "Name": "Janis Spector",
+        "When": "July 7",
+        "Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!."
+    },
+    "ChatRightMessageItemTemplate.xaml": {
+        "From": {
+            "Name": "Janis Spector",
+            "Avatar": "friend_thumbnail_31.jpg"
+        },
+        "When": "July 7",
+        "Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!."
+    },
+    "ChatMessagesListPage.xaml": {
+        "When": "July 7"
+    },
+     "MessagesListPage.xaml": {
+        "When": "July 7"
+    },
+    "ArticlesListPage.xaml": {
+        "PostsList": [
+            {
+                "Title": "The face of Wild Nature ",
+                "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+                "Section": "NATURE",
+                "Author": "UXDIVERS",
+                "Avatar": "friend_thumbnail_55.jpg",
+                "BackgroundImage": "article_image_0.jpg",
+                "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+                "QuoteAuthor": "Jaco Morrison",
+                "When": "JUN 15, 2015",
+                "Likes": "92",
+                "Followers": "2.4K"
+            },
+            {
+                "Title": "Upercut to glory",
+                "Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+                "Section": "SPORTS",
+                "Author": "Pat Davies",
+                "Avatar": "friend_thumbnail_27.jpg",
+                "BackgroundImage": "article_image_1.jpg",
+                "When": "JUN 15, 2015"
+            },
+            {
+                "Title": "Street and its influence on design",
+                "BackgroundImage": "article_image_2.jpg",
+                "Section": "DESIGN",
+                "Author": "Cassy Norton",
+                "Avatar": "friend_thumbnail_93.jpg",
+                "When": "JUN 15, 2015"
+            },
+            {
+                "Title": "The time for new adventures",
+                "BackgroundImage": "article_image_3.jpg",
+                "Section": "TRAVEL",
+                "Author": "Margaret Whites",
+                "Avatar": "friend_thumbnail_71.jpg",
+                "When": "JUN 15, 2015"
+            }
+        ]
+    },
+    "ArticlesFeedPage.xaml": {
+        "PostsList": [
+            {
+                "Title": "The face of Wild Nature ",
+                "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+                "Section": "NATURE",
+                "Author": "UXDIVERS",
+                "Avatar": "friend_thumbnail_55.jpg",
+                "BackgroundImage": "article_image_0.jpg",
+                "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+                "QuoteAuthor": "Jaco Morrison",
+                "When": "JUN 15, 2015",
+                "Likes": "92",
+                "Followers": "2.4K"
+            },
+            {
+                "Title": "Upercut to glory",
+                "Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+                "Section": "SPORTS",
+                "Author": "Pat Davies",
+                "Avatar": "friend_thumbnail_27.jpg",
+                "BackgroundImage": "article_image_1.jpg",
+                "When": "JUN 15, 2015"
+            },
+            {
+                "Title": "Street and its influence on design",
+                "BackgroundImage": "article_image_2.jpg",
+                "Section": "DESIGN",
+                "Author": "Cassy Norton",
+                "Avatar": "friend_thumbnail_93.jpg",
+                "When": "JUN 15, 2015"
+            },
+            {
+                "Title": "The time for new adventures",
+                "BackgroundImage": "article_image_3.jpg",
+                "Section": "TRAVEL",
+                "Author": "Margaret Whites",
+                "Avatar": "friend_thumbnail_71.jpg",
+                "When": "JUN 15, 2015"
+            }
+        ]
+    },
+
+    "SocialPage.xaml": {
+        "Friends": [
+            {
+                "Name": "Pat Davies",
+                "Avatar": "friend_thumbnail_27.jpg"
+            },
+            {
+                "Name": "Janis Spector",
+                "Avatar": "friend_thumbnail_31.jpg"
+            },
+            {
+                "Name": "Regina Joplin",
+                "Avatar": "friend_thumbnail_34.jpg"
+            },
+            {
+                "Name": "Jaco Morrison",
+                "Avatar": "friend_thumbnail_55.jpg"
+            },
+            {
+                "Name": "Margaret Whites",
+                "Avatar": "friend_thumbnail_71.jpg"
+            },
+            {
+                "Name": "Skyler Harrisson",
+                "Avatar": "friend_thumbnail_75.jpg"
+            },
+            {
+                "Name": "Al Pastorius",
+                "Avatar": "friend_thumbnail_93.jpg"
+            }
+        ],
+
+        "Images": [
+            "social_album_1.jpg",
+            "social_album_2.jpg",
+            "social_album_3.jpg",   
+            "social_album_4.jpg",
+            "social_album_5.jpg",
+            "social_album_6.jpg", 
+            "social_album_7.jpg",
+            "social_album_8.jpg",
+            "social_album_9.jpg"
+        ]
+    },
+
+    "SocialVariantPage.xaml": {
+        "Friends": [
+            {
+                "Name": "Pat Davies",
+                "Avatar": "friend_thumbnail_27.jpg"
+            },
+            {
+                "Name": "Janis Spector",
+                "Avatar": "friend_thumbnail_31.jpg"
+            },
+            {
+                "Name": "Regina Joplin",
+                "Avatar": "friend_thumbnail_34.jpg"
+            },
+            {
+                "Name": "Jaco Morrison",
+                "Avatar": "friend_thumbnail_55.jpg"
+            },
+            {
+                "Name": "Margaret Whites",
+                "Avatar": "friend_thumbnail_71.jpg"
+            },
+            {
+                "Name": "Skyler Harrisson",
+                "Avatar": "friend_thumbnail_75.jpg"
+            },
+            {
+                "Name": "Al Pastorius",
+                "Avatar": "friend_thumbnail_93.jpg"
+            }
+        ],
+
+        "Images": [
+            "social_album_1.jpg",
+            "social_album_2.jpg",
+            "social_album_3.jpg",   
+            "social_album_4.jpg",
+            "social_album_5.jpg",
+            "social_album_6.jpg", 
+            "social_album_7.jpg",
+            "social_album_8.jpg",
+            "social_album_9.jpg"
+        ]
+    },
+
+    "MainMenuPage.xaml" : {
+        "AllSamples" : {
+            "Count" : "7"
+        },
+        "Name" : "Group Name",
+        "SamplesGroupedByCategory" : [
+            { "Name" : "Sample Menu Group Item 1.0" },
+            { "Name" : "Sample Menu Group Item 1.1" }
+        ]
+    },
+
+
+    "SamplesListFromCategoryPage.xaml" : {
+        "SamplesList" : [
+            {
+                "Name" : "Category Item 1.0 ",
+                "Icon" : "(*)",
+                "BackgroundImage" : ""
+            },
+            {
+                "Name" : "Category Item 1.1",
+                "Icon" : "(*)",
+                "BackgroundImage" : ""
+            }
+        ]
+    },
+
+	"ThemePage.xaml": {
+		"Now": 2016-12-05T00:00:00.000Z,
+		"MinimumDate": 2000-01-01T00:00:00.000Z,
+		"MaximumDate": 2050-12-31T00:00:00.000Z,
+	}
+}

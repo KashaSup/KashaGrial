@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.CustomNavBar"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared">
+
+	<StackLayout 
+		Style="{ StaticResource CustomNavBarStyle }"
+		Orientation="Horizontal"
+		Padding="20,0">
+
+		<Label 
+			HorizontalOptions="Start"
+			VerticalOptions="Center"
+			Text="&#xf0c9; " 
+			FontSize="22"
+			TextColor="White" 
+			Style="{StaticResource FontIcon}">
+			<Label.GestureRecognizers>
+				<TapGestureRecognizer Tapped="OnHamburgerIconTapped" />
+			</Label.GestureRecognizers>
+		</Label>
+
+		<Label 
+			HorizontalOptions="CenterAndExpand"
+			VerticalOptions="Center"
+			FontSize="18"
+			Text="Welcome to Grial!" 
+			TextColor="White" />
+
+		<Label 
+			HorizontalOptions="End"
+			VerticalOptions="Center"
+			Text="&#xf085; " 
+			FontSize="22"
+			TextColor="White" 
+			Style="{StaticResource FontIcon}">
+			<Label.GestureRecognizers>
+				<TapGestureRecognizer Tapped="OnCogIconTapped" />
+			</Label.GestureRecognizers>
+		</Label>
+	</StackLayout>
+
+</ContentView>

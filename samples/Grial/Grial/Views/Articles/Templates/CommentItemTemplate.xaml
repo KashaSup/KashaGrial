@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.CommentItemTemplate"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" 
+	>
+	<StackLayout
+		Spacing="5"
+		Orientation="Horizontal" 
+		Padding="20,10"
+		HorizontalOptions="FillAndExpand" 
+		VerticalOptions="StartAndExpand">
+
+		<artina:CircleImage 
+			Source="{ Binding From.Avatar }"
+			Style="{ StaticResource Avatar }"
+			Aspect ="AspectFill"
+			HorizontalOptions = "Center"
+			VerticalOptions = "Start"  
+			TranslationY="7"/>
+
+		<StackLayout
+			Padding="0" 
+			Spacing="0"
+			Orientation="Horizontal"
+			HorizontalOptions="StartAndExpand">
+
+			<StackLayout 
+				HorizontalOptions="FillAndExpand" 
+				Spacing="0" 
+				Padding="10">
+
+			<Label
+					Text="{Binding From.Name}" 
+					FontAttributes="Bold"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="StartAndExpand"
+					TextColor="#FF212121" />
+
+			<StackLayout 
+					HorizontalOptions="FillAndExpand" 
+					Spacing="0" 
+					Padding="0,0,0,10">
+				<Label
+						Text="{Binding When}"
+						TextColor="#838383"
+						FontSize="12" 
+						/>
+			</StackLayout>
+
+			<Label
+				Text="{Binding Body}"
+				LineBreakMode="WordWrap"
+				TextColor="#838383"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions="FillAndExpand" />
+
+			</StackLayout>
+
+		</StackLayout>
+	</StackLayout>
+
+</ContentView>

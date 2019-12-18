@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.ProductGridItemTemplate">
+
+	<StackLayout>
+
+		<Image 
+			Source="{Binding Image}" 
+			HeightRequest="{Binding ThumbnailHeight}" 
+			Aspect="AspectFill"
+			/>
+
+	<StackLayout Padding="0,10,0,10">
+		<Label 
+			Text="{Binding Manufacturer, StringFormat='BY {0:F0}'}}"
+			FontSize ="9"
+			HorizontalOptions="Fill"
+			TextColor="#37474f"
+		/>
+
+		<Label 
+			Text="{Binding Name}"
+			FontSize ="16"
+			FontAttributes="Bold"
+			HorizontalOptions="Fill"
+			TextColor="{StaticResource AccentColor}"
+			/>
+				
+		<Label 
+			Text="{Binding Price}"
+			FontAttributes="Bold"
+			FontSize ="14"
+			HorizontalOptions="Fill"
+			/>
+	</StackLayout>
+
+	</StackLayout>
+	 
+</ContentView>

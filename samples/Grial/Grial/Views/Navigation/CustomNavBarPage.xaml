@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.CustomNavBarPage"
+	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial">
+
+	<StackLayout>
+		<commonViews:CustomNavBar />
+		<StackLayout Padding="20">
+			<Label 
+				Text="The NavBar on this page is totally custom which means you could add as many icons as you need and combine it with other views such as badges, etc.&#10;&#10;Note the Menu displayed on top ;)"  
+				VerticalTextAlignment="Center" />
+		</StackLayout>
+	</StackLayout>
+
+</ContentPage>

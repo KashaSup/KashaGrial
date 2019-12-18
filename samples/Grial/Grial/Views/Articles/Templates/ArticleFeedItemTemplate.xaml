@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	x:Class="UXDivers.Artina.Grial.ArticleFeedItemTemplate"
+	BackgroundColor="White">
+
+	<AbsoluteLayout 
+		Padding="20" 
+		VerticalOptions="FillAndExpand"
+		HorizontalOptions="FillAndExpand" >
+
+		<!-- LEFT COL -->
+		<artina:CircleImage 
+			Source="{ Binding Avatar }" 
+			Style="{ StaticResource AvatarXSmall }"
+			HorizontalOptions="Start" 
+		/>
+
+		<!-- RIGHT COL -->
+		<StackLayout 
+			Padding="56,0,0,0"
+			HorizontalOptions="FillAndExpand"
+			VerticalOptions="FillAndExpand"
+			Spacing="10"
+	    	AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+	   		AbsoluteLayout.LayoutFlags="All">
+
+			<Label
+				Text="{ Binding Author }"
+				FontAttributes="Bold" />
+
+			<Label
+				Text="{ Binding Title }" 
+				LineBreakMode="WordWrap"
+				VerticalTextAlignment="End"
+				HorizontalTextAlignment="Start"
+				/>
+
+			<Image
+				Source="{ Binding BackgroundImage }"
+				Aspect="AspectFill"
+				VerticalOptions="StartAndExpand"
+				HeightRequest="130"
+				/>
+
+			<Label 
+				Text="{ Binding When }" 
+				FontSize="12" Opacity=".7"
+				HorizontalOptions="End" />
+
+		</StackLayout>
+
+	</AbsoluteLayout>
+</ContentView>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="UXDivers.Artina.Grial.SignUpPage"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	BackgroundImage="{ StaticResource SignUpBackgroundImage }"
+	Title="Sign Up">
+
+	<ScrollView>
+
+		<!-- MAIN CONTAINER -->
+		<Grid
+			ColumnSpacing="0" 
+			RowSpacing="0" 
+			HorizontalOptions="Fill"
+			VerticalOptions="FillAndExpand" >
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="100" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="100" />
+			</Grid.RowDefinitions>
+
+			<!-- LOGO -->
+			<commonViews:BrandBlock 
+				Grid.Row="0"/>
+
+			<!-- CLOSE ICON -->
+			<Label 
+				Style="{DynamicResource IconCloseLabelStyle}" 
+				HorizontalOptions="End"
+				VerticalOptions="Start"
+				TranslationX="-20"
+				TranslationY="20"
+				Grid.Row="0">
+				<Label.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnCloseButtonClicked" />
+				</Label.GestureRecognizers>
+			</Label>
+
+			<!---FIELDS CONTAINER-->
+			<Grid
+				Padding="40, 0"
+				VerticalOptions="CenterAndExpand"
+				HeightRequest="260"
+				Grid.Row="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+					<StackLayout 
+						Grid.Row="0"
+						VerticalOptions="Start">
+						<!---EMAIL FIELD--> 
+						<Entry 
+							Placeholder="E-mail"
+							Style="{DynamicResource ArtinaLoginEntryStyle}"
+							>
+
+							<Entry.Behaviors>
+								<artina:EmailValidatorBehavior x:Name="emailValidator" />
+							</Entry.Behaviors>
+						</Entry>
+
+						<Label
+							Text=" Please enter a valid e-mail " IsVisible="false"
+							Style="{DynamicResource ValidationEntryErrorStyle}"
+							>
+
+							<Label.Triggers>
+								<DataTrigger TargetType="Label"
+									Binding="{Binding Source={x:Reference emailValidator}, Path=IsValid}"
+									Value="false">
+									<Setter Property="IsVisible" Value="true" />
+								</DataTrigger> 
+							</Label.Triggers>
+						</Label>
+					</StackLayout>
+
+					<!---USERNAME FIELD-->
+					<Entry 
+						Grid.Row="1"	
+						Placeholder="Username"
+						Style="{DynamicResource ArtinaLoginEntryStyle}" 
+						VerticalOptions="StartAndExpand" />
+
+
+					<!---PASSWORD FIELD-->
+					<Entry x:Name="passwordEntry"
+						Grid.Row="2"
+						Placeholder="Password"
+						IsPassword="true"
+						Style="{DynamicResource ArtinaLoginEntryStyle}" 
+						VerticalOptions="StartAndExpand" />
+
+					<StackLayout
+						Grid.Row="3"
+						VerticalOptions="StartAndExpand" >
+
+						<!---PASSWORD REPEAT FIELD-->
+						<Entry 
+							Placeholder="Repeat Password" 
+							IsPassword="true"
+							Style="{DynamicResource ArtinaLoginEntryStyle}"
+							>
+							<Entry.Behaviors>
+								<artina:TextMatchValidatorBehavior x:Name="passwordValidator" 
+									TextToMatch="{Binding Source={x:Reference passwordEntry}, Path=Text}"/>
+							</Entry.Behaviors>
+						</Entry>
+
+						<Label
+							Text=" Passwords do not match " IsVisible="false"
+							Style="{DynamicResource ValidationEntryErrorStyle}"
+							>
+
+							<Label.Triggers>
+								<DataTrigger 
+									TargetType="Label"
+									Binding="{Binding Source={x:Reference passwordValidator}, Path=IsValid}"
+									Value="false">
+									<Setter Property="IsVisible" Value="true" />
+								</DataTrigger> 
+							</Label.Triggers>
+
+						</Label>
+					</StackLayout>
+			</Grid>
+
+			<!-- FOOTER -->
+			<StackLayout 
+				x:Name="loginStack" 
+				HorizontalOptions="Fill"
+				VerticalOptions="End" 
+				Padding="20, 0"
+				Grid.Row="2" >
+
+				<artina:Button
+					Style="{DynamicResource PrimaryActionButtonStyle}"
+					VerticalOptions="End" 
+					Text="Sign Up!" />
+
+				<artina:Button 
+					Style="{DynamicResource TransparentButtonStyle}" 
+					VerticalOptions="End" 
+					Text="Already a user? Login now" />
+
+			</StackLayout>
+
+		</Grid>
+
+	</ScrollView>
+
+</ContentPage>

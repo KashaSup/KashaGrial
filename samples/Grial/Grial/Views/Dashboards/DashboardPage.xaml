@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:uikit="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	x:Class="UXDivers.Artina.Grial.DashboardPage"
+	Title = "Dashboard">
+
+	<artina:GridOptionsView 
+			ColumnCount="3"
+			RowCount="3"
+			ColumnSpacing="1" 
+			RowSpacing="1" 
+			Padding="0" 
+			VerticalOptions="FillAndExpand" 
+			BackgroundColor="#e7ebed"
+			ItemsSource="{Binding Items}">
+			<artina:GridOptionsView.ItemTemplate>
+				<DataTemplate>
+					<uikit:DashboardItemTemplate 
+							ShowBackgroundImage="false"
+							ShowBackgroundColor="false"
+							ShowiconColoredCircleBackground="true"
+							TextColor="Black" />
+				</DataTemplate>
+			</artina:GridOptionsView.ItemTemplate>
+	</artina:GridOptionsView>
+</ContentPage>

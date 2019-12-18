@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.ThemePage"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:sample="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	Title="Theme">
+
+	<ScrollView > 
+
+		<StackLayout VerticalOptions="Fill" Padding="20" Spacing="10">
+
+			<!-- ACTIVITY INDICATOR -->
+			<Label>
+					<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf110; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="ActivityIndicators" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+
+			<ActivityIndicator IsRunning="true" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+
+			<!-- BUTTONS -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf10c; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Buttons"  />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+
+			<Button Text="Default" />
+			<Button Text="Primary Action " Style="{DynamicResource PrimaryActionButtonStyle}" />
+			<Button Text="Secondary Action " Style="{DynamicResource SecondaryActionButtonStyle}" />
+			<Button Text="Save" Style="{DynamicResource SaveButtonStyle}" />
+			<Button Text="Delete" Style="{DynamicResource DeleteButtonStyle}" />
+
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+
+
+			<!-- FRAMES -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf096; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Frames" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<Frame>
+				<Label Text="This is a frame containing a Label control" 
+				FontSize="12" />
+			</Frame>
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+
+
+			<!-- EDITORS AND ENTRIES -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf040; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Entries And Editors"  />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<Entry 
+				Placeholder="E-mail" 
+				Text="" />
+
+			<Editor 
+				Text="I'm an Editor &#10;and I love multiple lines! ;)" 
+				VerticalOptions="FillAndExpand" />
+
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+
+			<!-- SLIDERS -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf1de; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Sliders" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<Slider Maximum="100" Value="50" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+			<!-- PROGRESSBAR -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf0ae; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="ProgressBars" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<ProgressBar Progress="0.5" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+			<!-- SWITCHES -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf011; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Switches" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<Switch IsToggled="false" HorizontalOptions="Center" />
+			<Switch IsToggled="true" HorizontalOptions="Center" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+			<!-- PICKERS -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf073; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="Pickers" />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+
+			<DatePicker VerticalOptions="CenterAndExpand" 
+					Date="{Binding Now}" 
+					MinimumDate="{Binding MinimumDate}" 
+					MaximumDate="{Binding MaximumDate}">
+				<DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+			</DatePicker>
+
+			<Picker Title="I'm a Picker!"  >
+				<Picker.Items>
+					<x:String>I</x:String>
+					<x:String>Love</x:String>
+					<x:String>Grial! :)</x:String>
+				</Picker.Items>
+			</Picker>
+
+			<TimePicker  /> 
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+			<BoxView HeightRequest="1" BackgroundColor="#838383" />
+			<BoxView Style="{ DynamicResource SpacerThemeShowCaseStyle }" />
+
+
+
+
+			<!-- LIST AND SEARCHBAR -->
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<FormattedString.Spans>
+							<Span 
+								Text="&#xf002; " 
+								FontFamily="{x:Static artina:FontAwesome.FontName}" />
+							<Span 
+								Text="ListView and SearchBar"  />
+						</FormattedString.Spans>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+
+			<SearchBar 
+				x:Name="themeNamesSearchBar" 
+				Placeholder="Search for a name" 
+				HorizontalOptions="FillAndExpand"/>
+			
+			<ListView 
+				x:Name="themeNamesSampleListView"
+				ItemsSource="{x:Static sample:SampleData.Names}"
+				 >
+			</ListView>
+
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

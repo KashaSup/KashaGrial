@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="UXDivers.Artina.Grial.ArticleViewPage"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:templates="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	Title="Article View">
+
+	<ScrollView x:Name="outerScrollView" BackgroundColor="White">
+
+		<Grid x:Name="layeringGrid" RowSpacing="0" VerticalOptions="FillAndExpand">
+			<Grid Padding="0" BackgroundColor="Black" >
+
+				<!-- MAIN IMAGE -->
+				<Image
+					x:Name="img"
+					Source="{ Binding Post.BackgroundImage }"
+					Aspect="AspectFill"
+					HorizontalOptions="StartAndExpand"
+					VerticalOptions="Start"
+					Opacity=".8"
+				/>
+			</Grid>
+
+			<StackLayout 
+				Spacing="0" 
+				Padding="0" 
+				VerticalOptions="FillAndExpand">
+
+				<StackLayout 
+					Padding="0"
+					Spacing="0"	
+					VerticalOptions="FillAndExpand">
+
+					<StackLayout 
+						Padding="20" 
+						x:Name="headers" 
+						HeightRequest="260"
+						AnchorX="0">
+
+						<!-- HEADERS -->
+						<Label
+							Text="{ Binding Post.Title }"
+							LineBreakMode="WordWrap"
+							VerticalOptions="FillAndExpand"
+							TextColor="White"
+							FontSize="35"
+							FontAttributes="None"
+							VerticalTextAlignment="End"/>
+
+						<StackLayout 
+							Orientation="Horizontal" 
+							VerticalOptions="End" >
+
+							<artina:CircleImage 
+								Source="{ Binding Post.Avatar }" 
+								Style="{ StaticResource AvatarSmall }"
+								
+								HorizontalOptions="Start"/>
+
+							<Label
+								Text="{ Binding Post.Author, StringFormat='BY {0:F0}'} }"
+								VerticalOptions="Center"
+								TextColor="{ StaticResource BrandColorLight }" 
+								HorizontalOptions="End" />
+						</StackLayout>
+
+					</StackLayout>
+
+					<StackLayout 
+						Orientation="Horizontal" 
+						Padding="20" 
+						BackgroundColor="White">
+						<Label 
+							Text="{ Binding Post.Section }" 
+							TextColor="#252525" 
+							HorizontalOptions="StartAndExpand" />
+						<Label 
+							Text="{ Binding Post.When }" 
+							TextColor="#8c8c8c" 
+							HorizontalOptions="StartAndExpand" />
+
+						<Label HorizontalOptions="StartAndExpand">
+							<Label.FormattedText>
+								<FormattedString>
+									<FormattedString.Spans>
+										<Span 
+											Text="&#xf0c0; " 
+											FontSize="{ StaticResource BaseFontSize }"
+											ForegroundColor="{StaticResource AccentColor}" 
+											FontFamily="{ x:Static artina:FontAwesome.FontName }" />
+										<Span 
+											Text="77" 
+											FontSize="{ StaticResource BaseFontSize }"
+											ForegroundColor="{ StaticResource AccentColor }" />
+									</FormattedString.Spans>
+								</FormattedString>
+							</Label.FormattedText>
+						</Label>
+
+						<Label HorizontalOptions="StartAndExpand">
+							<Label.FormattedText>
+								<FormattedString>
+									<FormattedString.Spans>
+										<Span 
+											Text="&#xf004; " 
+											FontSize="{ StaticResource BaseFontSize }"
+											ForegroundColor="{StaticResource AccentColor }" 
+											FontFamily="{ x:Static artina:FontAwesome.FontName }" />
+										<Span 
+											Text="22" 
+											FontSize="{ StaticResource BaseFontSize }"
+											ForegroundColor="{ StaticResource AccentColor }" />
+									</FormattedString.Spans>
+								</FormattedString>
+							</Label.FormattedText>
+						</Label>
+					</StackLayout>
+
+					<BoxView Style="{ StaticResource Horizontal1ptLineStyle }" />
+
+					<StackLayout Padding="20" BackgroundColor="White">
+						<!-- MAIN PARAGRAPH -->
+						<Label
+							Text="{ Binding Post.Body }"
+							VerticalOptions="EndAndExpand"
+							TextColor="#8a8a8a" />
+					</StackLayout>
+
+
+					<!-- QUOTE -->
+					<StackLayout
+						Orientation="Horizontal"
+						Padding="20"
+						Spacing="0" 
+						BackgroundColor="White">
+
+						<Label
+							Text="“"
+							FontSize="42"
+							MinimumWidthRequest="42"
+							FontAttributes="Bold"
+							VerticalOptions="Start"
+							TextColor="#141414" />
+
+						<StackLayout Padding="20">
+							<Label
+								Text="{ Binding Post.Quote }"
+								VerticalOptions="Start"
+								FontSize="20"
+								LineBreakMode="WordWrap"
+								TextColor="#141414" />
+
+							<Label 
+								Text="{ Binding Post.QuoteAuthor }" 
+								TextColor="#252525" />
+						</StackLayout>
+
+						<Label
+							Text="”"
+							FontSize="42"
+							FontAttributes="Bold"
+							MinimumWidthRequest="42"
+							VerticalOptions="End"
+							TextColor="#141414"/>
+					</StackLayout>
+
+					<StackLayout Padding="20" BackgroundColor="White">
+						<!-- REMAINING PARAGRAPHS -->
+						<Label
+							Text="{ Binding Post.Body }"
+							VerticalOptions="StartAndExpand"
+							TextColor="#8a8a8a" />
+					</StackLayout>
+
+					<!-- POSTED -->
+					<Grid
+						ColumnSpacing="10" 
+						RowSpacing="10"
+						Padding="20,20,20,40" 
+						BackgroundColor="White">
+
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+
+						
+						<StackLayout Orientation="Horizontal"
+							Grid.Column="0"
+							VerticalOptions="Center">
+
+							<artina:CircleImage 
+								Source="{ Binding Post.Avatar }" 
+								Style="{ StaticResource AvatarXSmall }"
+								VerticalOptions="Center"/>
+							<Label 
+								Text="{ Binding Post.Author, StringFormat='by {0:F0}'} }"
+								TextColor="{ StaticResource AccentColor }" 
+								FontAttributes="Bold"
+								VerticalTextAlignment="Center"/>
+						</StackLayout>
+
+
+						<StackLayout 
+							Orientation="Horizontal" 
+							VerticalOptions="Center"
+							Grid.Column="1">
+
+							<Label
+								Text="&#xf02c;"
+								TextColor="{ StaticResource AccentColor }"
+								FontSize="24" 
+								Style="{ StaticResource FontIcon }"
+								VerticalOptions="Center"
+								VerticalTextAlignment="Center"/>
+							<Label
+								Text="{ Binding Post.Section, StringFormat='in {0:F0}'} }"
+								TextColor="{StaticResource AccentColor}" 
+								FontAttributes="Bold" 
+								VerticalTextAlignment="Start"/>
+						</StackLayout>
+
+					</Grid>
+
+					<BoxView Style="{ StaticResource Horizontal1ptLineStyle }" />
+
+				</StackLayout>
+
+				<!-- COMMENTS -->
+				<StackLayout 
+					BackgroundColor="#f9f9f9" 
+					Padding="20">
+
+					<Label 
+						BindingContext="{ Binding Comments }"
+						Text="{ Binding Count, StringFormat='{0:F0} COMMENTS' }"
+						TextColor="#252525"
+						HorizontalOptions="StartAndExpand"
+						VerticalOptions="Start" />
+				</StackLayout>
+
+				<StackLayout 
+					VerticalOptions="FillAndExpand" 
+					BackgroundColor="White">
+
+					<!-- COMMENTS -->
+					<ListView
+						ItemsSource="{ Binding Comments }"
+						SeparatorColor="#77CCCCCC"
+						SeparatorVisibility="Default"
+						RowHeight="180"
+						ItemTapped="OnItemTapped"
+						VerticalOptions="FillAndExpand"
+						>
+
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<ViewCell>
+
+									<ViewCell.ContextActions>
+										<MenuItem Clicked="OnMore"
+											 Text="More" />
+										<MenuItem Clicked="OnDelete"
+											 Text="Delete" IsDestructive="True" />
+									</ViewCell.ContextActions>
+
+									<templates:CommentItemTemplate />
+
+								</ViewCell>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+					</ListView>
+
+					<!-- BUTTON -->
+					<StackLayout Padding="20" BackgroundColor="White">
+						<artina:Button
+							Style="{ StaticResource PrimaryActionButtonStyle }"
+							Text="Add Comment"
+							Clicked="OnPrimaryActionButtonClicked"
+							 />
+					</StackLayout>
+				</StackLayout>
+
+
+			</StackLayout>
+		</Grid>
+
+	</ScrollView>
+
+</ContentPage>
